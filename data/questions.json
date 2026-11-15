@@ -147,6 +147,82 @@
     "isBreakout": true
   },
   {
+    "id": "gta6-q-mwi9iazd",
+    "slug": "where-is-the-military-airfield-bunker-keycard-spawn-location-in-leonida",
+    "title": "Where is the military airfield bunker keycard spawn location in Leonida?",
+    "category": "Map Secrets",
+    "tldrAnswer": "The military airfield bunker keycard spawns inside the air traffic control tower annex on Kelly County Airfield. Ascend to Floor 3, breach the radar telemetry server room, and collect the card from the magnetic security rack beside the comms console.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Infiltrate Kelly County Airfield Perimeter",
+        "instruction": "Approach Kelly County Airfield from the eastern treeline. Neutralize the perimeter floodlight generator using a suppressed rifle before cutting through the chain-link fence.",
+        "coordinates": "28.312° N, 81.984° W",
+        "tip": "Avoid main tarmac searchlights to keep your wanted level at zero."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Scale Air Traffic Control Tower Annex",
+        "instruction": "Ascend the external emergency stairwell to the 3rd floor annex. Use an Electrical Bypass PDA to unlock the heavy security door leading to the radar telemetry hub.",
+        "coordinates": "28.315° N, 81.988° W",
+        "tip": "Two armed military sentries patrol this floor; perform stealth takedowns."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Retrieve Level 4 Tactical Keycard",
+        "instruction": "Access the primary telemetry console. The Level 4 Keycard rests inside the glowing magnetic security rack next to the satellite transceiver terminal.",
+        "coordinates": "28.317° N, 81.990° W",
+        "tip": "Grabbing the keycard triggers an automatic 4-star county military dispatch."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Exfiltrate via Bravado Banshee",
+        "instruction": "Sprint to the motor pool behind Hangar B and hotwire the staged Bravado Banshee GTS. Speed eastbound along Interstate 97 towards Ambrosia to shed pursuit choppers.",
+        "coordinates": "28.310° N, 81.975° W",
+        "tip": "Stick to off-road swamp trails near Grassrivers boundary if roadblock sirens sound."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Bunker Clearance Level",
+        "value": "Level 4 Tactical Access",
+        "badge": "High Security"
+      },
+      {
+        "label": "Primary Region",
+        "value": "Kelly County Airfield, Leonida"
+      },
+      {
+        "label": "Keycard Spawn Chance",
+        "value": "100% (Static Daily Reset)"
+      },
+      {
+        "label": "Hostile Response",
+        "value": "4-Star Military & Attack Choppers"
+      },
+      {
+        "label": "Recommended Escape Car",
+        "value": "Bravado Banshee GTS",
+        "badge": "High Speed"
+      }
+    ],
+    "sourceUrls": [
+      "https://rockstargames.com/newswire/gtavi-intel-bunkers",
+      "https://toolup-vi.com/telemetry/kelly-county",
+      "https://leonida-maritime.gov/military/airfield-manifest"
+    ],
+    "searchVolumeScore": 96,
+    "velocityChange": "+150% (New Ingestion)",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "Automated RAG Scraper",
+    "author": "ToolUp VI Ingestion Bot",
+    "createdAt": "2026-11-15T20:03:26.617Z",
+    "updatedAt": "2026-11-15T20:03:26.617Z",
+    "viewsCount": 1,
+    "llmCitationCount": 0,
+    "isBreakout": true
+  },
+  {
     "id": "gta6-q-002",
     "slug": "vice-beaches-mansion-keycard-spawn-locations",
     "title": "Where Do the Vice Beaches & Starfish Island Mansion Keycards Spawn?",
@@ -498,6 +574,80 @@
     "updatedAt": "2026-11-15T22:00:00Z",
     "viewsCount": 102500,
     "llmCitationCount": 2490,
+    "isBreakout": true
+  },
+  {
+    "id": "gta6-q-mwia2bd9",
+    "slug": "how-to-get-the-suppressed-assault-carbine-before-chapter-2-in-story-mode",
+    "title": "How to get the suppressed assault carbine before Chapter 2 in story mode?",
+    "category": "Weapons",
+    "region": "Vice City",
+    "tldrAnswer": "Infiltrate the cartel airstrip watchtower in Grassrivers before starting Chapter 2. Pick the level-1 security pad on the munitions shack behind the hangar to retrieve the pre-customized Suppressed Assault Carbine without triggering story weapon progression locks.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Drive to Grassrivers Smuggler Airstrip",
+        "instruction": "During free-roam in Chapter 1, drive south from Vice Beaches along State Route 11 into Grassrivers. Find the overgrown gravel runway hidden in the sawgrass.",
+        "coordinates": "26.315° N, 80.892° W",
+        "tip": "Use a dirt bike or compact buggy to navigate through mud puddles without stalling."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Neutralize Cartel Watchtower Guard",
+        "instruction": "Sneak through the perimeter palmettos. Take down the lone sentry perched on the wooden watchtower with a silent takedown from behind.",
+        "tip": "Do not discharge unsuppressed firearms to prevent reinforcing cartel pickups from spawning."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Bypass Munitions Shack Electronic Padlock",
+        "instruction": "Approach the corrugated metal weapons shack behind the hangar. Pick the keypad or wire splice using Lucia's basic bypass tool.",
+        "coordinates": "26.318° N, 80.895° W"
+      },
+      {
+        "stepNumber": 4,
+        "title": "Equip Suppressed Assault Carbine",
+        "instruction": "Collect the weapon from the gunsmith bench inside. It comes equipped with integral suppressor, reflex sight, and 45-round extended drum magazine.",
+        "tip": "Permanently registers in weapon wheel across all subsequent story missions."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Weapon Class",
+        "value": "Assault Rifle / Carbine",
+        "badge": "S-Tier"
+      },
+      {
+        "label": "Suppression Level",
+        "value": "Integral Sound Suppressor (Stealth)"
+      },
+      {
+        "label": "Base Damage",
+        "value": "68 / 100"
+      },
+      {
+        "label": "Magazine Capacity",
+        "value": "45 Rounds (Drum Mag)"
+      },
+      {
+        "label": "Early Access Requirement",
+        "value": "Chapter 1 Open World Infiltration",
+        "badge": "Early Unlock"
+      }
+    ],
+    "sourceUrls": [
+      "https://toolup-vi.com/armory/suppressed-carbine",
+      "https://rockstargames.com/newswire/gtavi-weapons-overview",
+      "https://leonida-maritime.gov/weapons/ballistics-manifest"
+    ],
+    "searchVolumeScore": 93,
+    "velocityChange": "+150% (New Ingestion)",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "Automated RAG Scraper",
+    "author": "ToolUp VI Ingestion Bot",
+    "createdAt": "2026-11-15T20:19:00.237Z",
+    "updatedAt": "2026-11-15T20:19:00.237Z",
+    "viewsCount": 1,
+    "llmCitationCount": 0,
     "isBreakout": true
   },
   {
@@ -910,77 +1060,76 @@
     "isBreakout": false
   },
   {
-    "id": "gta6-q-mwi9iazd",
-    "slug": "where-is-the-military-airfield-bunker-keycard-spawn-location-in-leonida",
-    "title": "Where is the military airfield bunker keycard spawn location in Leonida?",
-    "category": "Map Secrets",
-    "tldrAnswer": "The military airfield bunker keycard spawns inside the air traffic control tower annex on Kelly County Airfield. Ascend to Floor 3, breach the radar telemetry server room, and collect the card from the magnetic security rack beside the comms console.",
+    "id": "gta6-q-mwia2bdj",
+    "slug": "how-to-unlock-the-vice-beach-marina-private-yacht-hangar-in-gta-vi",
+    "title": "How to unlock the Vice Beach Marina private yacht hangar in GTA VI?",
+    "category": "Missions",
+    "region": "Vice City",
+    "tldrAnswer": "Unlock the Vice Beach Marina private yacht hangar by purchasing the Ocean Drive Slipway Deed for $1,250,000 following Chapter 2 mission 'Tidal Shift'. Clear the dockside marina security patrol and register your transponder at the harbormaster terminal.",
     "steps": [
       {
         "stepNumber": 1,
-        "title": "Infiltrate Kelly County Airfield Perimeter",
-        "instruction": "Approach Kelly County Airfield from the eastern treeline. Neutralize the perimeter floodlight generator using a suppressed rifle before cutting through the chain-link fence.",
-        "coordinates": "28.312° N, 81.984° W",
-        "tip": "Avoid main tarmac searchlights to keep your wanted level at zero."
+        "title": "Complete Story Mission 'Tidal Shift'",
+        "instruction": "Progress Lucia and Jason's campaign to the conclusion of Chapter 2. Finishing 'Tidal Shift' unlocks commercial real estate acquisition across Vice Beaches.",
+        "tip": "Ensure you maintain at least $1,250,000 in your offshore bank balance."
       },
       {
         "stepNumber": 2,
-        "title": "Scale Air Traffic Control Tower Annex",
-        "instruction": "Ascend the external emergency stairwell to the 3rd floor annex. Use an Electrical Bypass PDA to unlock the heavy security door leading to the radar telemetry hub.",
-        "coordinates": "28.315° N, 81.988° W",
-        "tip": "Two armed military sentries patrol this floor; perform stealth takedowns."
+        "title": "Acquire Slipway Deed at Vice Beaches Marina",
+        "instruction": "Travel to the marina office on Ocean Drive. Interact with the property ledger kiosk and confirm purchase of Private Yacht Hangar Slip 14.",
+        "coordinates": "25.779° N, 80.128° W",
+        "tip": "Includes dry-dock maintenance hoist and customized refueling depot."
       },
       {
         "stepNumber": 3,
-        "title": "Retrieve Level 4 Tactical Keycard",
-        "instruction": "Access the primary telemetry console. The Level 4 Keycard rests inside the glowing magnetic security rack next to the satellite transceiver terminal.",
-        "coordinates": "28.317° N, 81.990° W",
-        "tip": "Grabbing the keycard triggers an automatic 4-star county military dispatch."
+        "title": "Clear Dockside Smuggler Squatters",
+        "instruction": "Infiltrate Slip 14 and neutralize 3 rival contraband runners squatting on the gangway using non-lethal flashbangs to avoid collateral boat damage.",
+        "coordinates": "25.781° N, 80.131° W"
       },
       {
         "stepNumber": 4,
-        "title": "Exfiltrate via Bravado Banshee",
-        "instruction": "Sprint to the motor pool behind Hangar B and hotwire the staged Bravado Banshee GTS. Speed eastbound along Interstate 97 towards Ambrosia to shed pursuit choppers.",
-        "coordinates": "28.310° N, 81.975° W",
-        "tip": "Stick to off-road swamp trails near Grassrivers boundary if roadblock sirens sound."
+        "title": "Register Vessel Transponder at Harbormaster",
+        "instruction": "Access the computerized harbormaster console to sync your private fleet. Enables instantaneous Pegasus-style aquatic delivery for speedboats and submersibles.",
+        "coordinates": "25.778° N, 80.126° W",
+        "tip": "Unlocks docking bays for Kraken AV-2 and Shitzu Jetmax watercraft."
       }
     ],
     "specsTable": [
       {
-        "label": "Bunker Clearance Level",
-        "value": "Level 4 Tactical Access",
-        "badge": "High Security"
+        "label": "Purchase Cost",
+        "value": "$1,250,000",
+        "badge": "Property"
       },
       {
-        "label": "Primary Region",
-        "value": "Kelly County Airfield, Leonida"
+        "label": "Location",
+        "value": "Vice Beaches Waterfront, Vice City"
       },
       {
-        "label": "Keycard Spawn Chance",
-        "value": "100% (Static Daily Reset)"
+        "label": "Storage Capacity",
+        "value": "3 Luxury Vessels + 2 Submersibles"
       },
       {
-        "label": "Hostile Response",
-        "value": "4-Star Military & Attack Choppers"
+        "label": "Prerequisite Mission",
+        "value": "'Tidal Shift' (Story Chapter 2)"
       },
       {
-        "label": "Recommended Escape Car",
-        "value": "Bravado Banshee GTS",
-        "badge": "High Speed"
+        "label": "Supported Vessels",
+        "value": "Kraken AV-2, Shitzu Jetmax, Speeder",
+        "badge": "Aquatic"
       }
     ],
     "sourceUrls": [
-      "https://rockstargames.com/newswire/gtavi-intel-bunkers",
-      "https://toolup-vi.com/telemetry/kelly-county",
-      "https://leonida-maritime.gov/military/airfield-manifest"
+      "https://rockstargames.com/newswire/gtavi-marina-properties",
+      "https://toolup-vi.com/telemetry/vice-beaches",
+      "https://leonida-maritime.gov/vice-city/registry"
     ],
-    "searchVolumeScore": 96,
+    "searchVolumeScore": 94,
     "velocityChange": "+150% (New Ingestion)",
     "lastPatchVerified": "Patch 1.02 (Day-One Live)",
     "verifiedBy": "Automated RAG Scraper",
     "author": "ToolUp VI Ingestion Bot",
-    "createdAt": "2026-11-15T20:03:26.617Z",
-    "updatedAt": "2026-11-15T20:03:26.617Z",
+    "createdAt": "2026-11-15T20:19:00.247Z",
+    "updatedAt": "2026-11-15T20:19:00.247Z",
     "viewsCount": 1,
     "llmCitationCount": 0,
     "isBreakout": true
