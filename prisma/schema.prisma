@@ -1,0 +1,44 @@
+// Prisma Schema for GTA VI GEO Directory ("The Nervous System")
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Category {
+  Missions
+  MoneyGuides
+  Vehicles
+  Weapons
+  MapSecrets
+  GlitchesAndFixes
+}
+
+model Question {
+  id                 String   @id @default(cuid())
+  slug               String   @unique
+  title              String
+  category           Category
+  tldrAnswer         String
+  stepsJson          Json     // Array of { stepNumber, title, instruction, coordinates, tip }
+  specsTableJson     Json     // Array of { label, value, badge }
+  sourceUrls         String[]
+  searchVolumeScore  Int      @default(0)
+  velocityChange     String   @default("+100% last 24h")
+  lastPatchVerified  String   @default("Patch 1.02")
+  verifiedBy         String   @default("ViceIntel Lab")
+  author             String   @default("Staff Editor")
+  viewsCount         Int      @default(0)
+  llmCitationCount   Int      @default(0)
+  isBreakout         Boolean  @default(false)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([category])
+  @@index([searchVolumeScore(sort: Desc)])
+  @@index([slug])
+}
+
