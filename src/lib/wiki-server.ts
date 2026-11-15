@@ -35,3 +35,4 @@ export function getAdjacentWikiGuides(currentSlug: string): {
 
   return { prev, next };
 }
+
