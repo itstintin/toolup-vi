@@ -44,7 +44,11 @@ def load_dotenv(env_path: Path = PROJECT_ROOT / ".env") -> None:
 
 load_dotenv()
 
-DEFAULT_INGEST_ENDPOINT = os.environ.get("INGEST_ENDPOINT", "http://localhost:3000/api/v1/ingest")
+site_url = os.environ.get("SITE_URL")
+if site_url:
+    DEFAULT_INGEST_ENDPOINT = f"{site_url.rstrip('/')}/api/v1/ingest"
+else:
+    DEFAULT_INGEST_ENDPOINT = os.environ.get("INGEST_ENDPOINT", "http://localhost:3000/api/v1/ingest")
 DEFAULT_API_KEY = os.environ.get("INGEST_API_KEY", "geo-nervous-system-secret-key")
 
 # Optional google-genai SDK support with graceful fallback
