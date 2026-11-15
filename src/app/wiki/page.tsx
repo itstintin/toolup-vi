@@ -48,8 +48,8 @@ export const metadata: Metadata = {
 };
 
 export default function WikiIndexPage() {
+  const tree = getWikiTree();
   const allQuestions = getAllQuestions();
-  const tree = getWikiTree(allQuestions);
 
   // Synthetic direct answer record for the hub
   const hubDirectAnswerRecord: QuestionRecord = {
