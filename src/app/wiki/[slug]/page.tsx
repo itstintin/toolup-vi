@@ -93,8 +93,9 @@ export default async function WikiArticlePage({ params }: PageProps) {
     notFound();
   }
 
-  const tree = getWikiTree();
-  const { prev, next } = getAdjacentWikiGuides(question.slug);
+  const allQuestions = getAllQuestions();
+  const tree = getWikiTree(allQuestions);
+  const { prev, next } = getAdjacentWikiGuides(question.slug, allQuestions);
 
   // Schema.org payloads for AI search engines & crawlers
   const qaSchema = generateQaPageSchema(question);

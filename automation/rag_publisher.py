@@ -26,8 +26,26 @@ AUTOMATION_DIR = PROJECT_ROOT / "automation"
 QUEUE_FILE = AUTOMATION_DIR / "queue.json"
 DATA_DB_FILE = PROJECT_ROOT / "data" / "questions.json"
 
-DEFAULT_INGEST_ENDPOINT = "http://localhost:3000/api/v1/ingest"
-DEFAULT_API_KEY = "geo-nervous-system-secret-key"
+# Load .env file automatically if present
+def load_dotenv(env_path: Path = PROJECT_ROOT / ".env") -> None:
+    if env_path.exists():
+        try:
+            with open(env_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#") and "=" in line:
+                        k, v = line.split("=", 1)
+                        k = k.strip()
+                        v = v.strip().strip('"').strip("'")
+                        if k and k not in os.environ:
+                            os.environ[k] = v
+        except Exception:
+            pass
+
+load_dotenv()
+
+DEFAULT_INGEST_ENDPOINT = os.environ.get("INGEST_ENDPOINT", "http://localhost:3000/api/v1/ingest")
+DEFAULT_API_KEY = os.environ.get("INGEST_API_KEY", "geo-nervous-system-secret-key")
 
 # Optional google-genai SDK support with graceful fallback
 try:

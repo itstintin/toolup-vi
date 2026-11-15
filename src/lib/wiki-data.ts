@@ -85,7 +85,7 @@ export interface WikiTreeNode {
   guides: QuestionRecord[];
 }
 
-export function getWikiTree(questions: QuestionRecord[]): WikiTreeNode[] {
+export function getWikiTree(questions?: QuestionRecord[]): WikiTreeNode[] {
   return WIKI_REGIONS.map((region) => {
     const matchingGuides = (questions || []).filter(
       (q) => q.region && q.region.toLowerCase() === region.name.toLowerCase()
@@ -100,12 +100,13 @@ export function getWikiTree(questions: QuestionRecord[]): WikiTreeNode[] {
 
 export function getAdjacentWikiGuides(
   currentSlug: string,
-  questions: QuestionRecord[]
+  questions?: QuestionRecord[]
 ): {
   prev: QuestionRecord | null;
   next: QuestionRecord | null;
 } {
-  const currentIndex = (questions || []).findIndex(
+  const list = questions || [];
+  const currentIndex = list.findIndex(
     (q) => q.slug.toLowerCase() === currentSlug.toLowerCase()
   );
 
@@ -113,8 +114,8 @@ export function getAdjacentWikiGuides(
     return { prev: null, next: null };
   }
 
-  const prev = currentIndex > 0 ? questions[currentIndex - 1] : null;
-  const next = currentIndex < questions.length - 1 ? questions[currentIndex + 1] : null;
+  const prev = currentIndex > 0 ? list[currentIndex - 1] : null;
+  const next = currentIndex < list.length - 1 ? list[currentIndex + 1] : null;
 
   return { prev, next };
 }
