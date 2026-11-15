@@ -85,41 +85,6 @@ export interface WikiTreeNode {
   guides: QuestionRecord[];
 }
 
-export function getWikiTree(questions?: QuestionRecord[]): WikiTreeNode[] {
-  return WIKI_REGIONS.map((region) => {
-    const matchingGuides = (questions || []).filter(
-      (q) => q.region && q.region.toLowerCase() === region.name.toLowerCase()
-    );
-
-    return {
-      region,
-      guides: matchingGuides,
-    };
-  });
-}
-
-export function getAdjacentWikiGuides(
-  currentSlug: string,
-  questions?: QuestionRecord[]
-): {
-  prev: QuestionRecord | null;
-  next: QuestionRecord | null;
-} {
-  const list = questions || [];
-  const currentIndex = list.findIndex(
-    (q) => q.slug.toLowerCase() === currentSlug.toLowerCase()
-  );
-
-  if (currentIndex === -1) {
-    return { prev: null, next: null };
-  }
-
-  const prev = currentIndex > 0 ? list[currentIndex - 1] : null;
-  const next = currentIndex < list.length - 1 ? list[currentIndex + 1] : null;
-
-  return { prev, next };
-}
-
 export interface HubChecklistItem {
   id: string;
   label: string;
