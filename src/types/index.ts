@@ -7,6 +7,14 @@ export type Category =
   | "Map Secrets"
   | "Glitches & Fixes";
 
+export type WikiRegion =
+  | "Vice City"
+  | "Leonida Keys"
+  | "Grassrivers"
+  | "Port Gellhorn"
+  | "Ambrosia"
+  | "Mount Kalaga National Park";
+
 export interface StepItem {
   stepNumber: number;
   title: string;
@@ -26,6 +34,7 @@ export interface QuestionRecord {
   slug: string;
   title: string;
   category: Exclude<Category, "All">;
+  region?: WikiRegion | string;
   tldrAnswer: string;
   steps: StepItem[];
   specsTable: SpecRow[];
@@ -46,6 +55,7 @@ export interface IngestPayload {
   question_title: string;
   slug: string;
   category: Exclude<Category, "All">;
+  region?: WikiRegion | string;
   tldr_answer: string;
   steps_markdown?: string | StepItem[];
   specs_table_json?: SpecRow[];

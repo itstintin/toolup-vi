@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import Link from "next/link";
-import { Cpu, Terminal } from "lucide-react";
+import { Cpu, Terminal, Compass, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "ToolUp VI | Automated GTA VI Q&A & Generative Engine Directory",
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "Grotti Cheetah Classic",
     "Grassrivers airboat loop",
     "Kelly County radar code",
+    "GTA VI Wiki",
+    "Leonida field guide",
   ],
   authors: [{ name: "ToolUp VI Research Lab" }],
   openGraph: {
@@ -52,6 +54,15 @@ export default function RootLayout({
                 <p className="text-[#94A3B8] font-sans leading-relaxed">
                   Automated Generative Engine Optimization directory for Grand Theft Auto VI. Zero fluff, instant citations, continuous live telemetry across Leonida.
                 </p>
+                <div className="pt-2">
+                  <Link
+                    href="/wiki"
+                    className="inline-flex items-center gap-1.5 text-xs text-[#00F0FF] hover:underline"
+                  >
+                    <Compass className="w-3.5 h-3.5" />
+                    <span>Explore 3-Column Editorial Wiki</span>
+                  </Link>
+                </div>
               </div>
 
               <div>
@@ -90,8 +101,9 @@ export default function RootLayout({
                   <li>Missions & Heists (Port Gellhorn)</li>
                   <li>Vehicle Benchmarks (Banshee & Cheetah)</li>
                   <li>Money Loops (Grassrivers Contraband)</li>
-                  <li>Airspace Defense (Kelly County)</li>
+                  <li>Airspace Defense (Kelly County & Ambrosia)</li>
                   <li>Map Secrets (Vice Beaches & Keys)</li>
+                  <li>Alpine Exploration (Mount Kalaga)</li>
                 </ul>
               </div>
 
@@ -108,11 +120,21 @@ export default function RootLayout({
                     <Cpu className="w-3.5 h-3.5" />
                     <span>RAG Ingestion: Active</span>
                   </div>
-                  <div className="text-[10px] text-[#475569]">
-                    Protected under Fair Use Game Data Analysis. Rockstar Games & GTA VI are trademarks of Take-Two Interactive.
+                  <div className="flex items-center gap-2 text-[#94A3B8]">
+                    <Shield className="w-3.5 h-3.5 text-amber-400" />
+                    <span>Editorial Wiki: Online</span>
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Clean Legal Disclaimer */}
+            <div className="my-6 p-4 rounded-xl bg-[#0F1118] border border-[#1F2430] text-[11px] text-[#94A3B8] font-sans leading-relaxed">
+              <span className="font-bold text-[#F3F4F6] font-mono uppercase tracking-wider block mb-1 text-[10px]">
+                Legal Disclaimer:
+              </span>
+              ToolUp VI is an unofficial fan database not affiliated with Rockstar Games or Take-Two Interactive.
+              Grand Theft Auto, GTA VI, Vice City, and all associated logos, characters, and trademarks are the registered property of Take-Two Interactive Software, Inc. and Rockstar Games. Gameplay telemetry and coordinates are provided under fair-use commentary and community educational documentation.
             </div>
 
             <div className="pt-6 border-t border-[#181C26] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">

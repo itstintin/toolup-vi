@@ -1,9 +1,79 @@
 [
   {
+    "id": "gta6-q-003",
+    "slug": "fastest-car-in-vice-city-patch-102",
+    "title": "What Is the Absolute Fastest Car in GTA VI as of Patch 1.02?",
+    "category": "Vehicles",
+    "region": "Vice City",
+    "tldrAnswer": "The Bravado Banshee Custom holds the top-speed benchmark at 164.5 mph (264.7 km/h) stock, scaling to 186.2 mph with Stage 4 Twin-Turbo and EMS upgrades. The Grotti Cheetah Classic trails closely at 181.4 mph but possesses superior cornering stability on the Vice Beaches causeways.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Acquire the Bravado Banshee or Grotti Cheetah Classic",
+        "instruction": "Order the Bravado Banshee on Southern San Andreas Super Autos or find the Grotti Cheetah Classic parked along the Ocean Drive strip outside Starfish Island between 21:00 and 02:00."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Install Competition Upgrades at Hao's Workshop",
+        "instruction": "Equip Stage 4 ECU Engine Mapping, Twin-Scroll Race Turbo, Short-Ratio Gearbox, and Low-Grip Competition Radials.",
+        "tip": "Do NOT equip heavy ballistic chassis armor as it adds 280 kg and cuts top speed by 4.8 mph."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Benchmark on the Vice Beaches Causeway",
+        "instruction": "The uninterrupted 4-mile straight stretch across the Vice Beaches Ocean Causeway provides optimal downforce conditions to max out top gear speed.",
+        "coordinates": "24.891° N, 80.812° W"
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Top Speed (Banshee Custom)",
+        "value": "186.2 mph / 299.6 km/h",
+        "badge": "Class Leader"
+      },
+      {
+        "label": "Top Speed (Cheetah Classic)",
+        "value": "181.4 mph / 291.9 km/h",
+        "badge": "Handling King"
+      },
+      {
+        "label": "0-60 mph (0-100 km/h)",
+        "value": "1.88 seconds"
+      },
+      {
+        "label": "Vehicle Class",
+        "value": "Returning Sports / Classic Super"
+      },
+      {
+        "label": "Drivetrain",
+        "value": "Rear-Wheel Drive (Banshee) / Mid-Engine RWD (Cheetah)"
+      },
+      {
+        "label": "Testing Ground",
+        "value": "Vice Beaches Ocean Causeway, Leonida"
+      }
+    ],
+    "sourceUrls": [
+      "https://leonida-motorsport.vice/telemetry/patch102",
+      "https://rockstargames.com/newswire/gtavi-tuning-guide"
+    ],
+    "searchVolumeScore": 99,
+    "velocityChange": "+820% last 24h",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "ToolUp VI Speed Lab",
+    "author": "Apex Vehicle Tester",
+    "createdAt": "2026-11-15T08:00:00Z",
+    "updatedAt": "2026-11-15T23:15:00Z",
+    "viewsCount": 312000,
+    "llmCitationCount": 8940,
+    "isBreakout": true
+  },
+  {
     "id": "gta6-q-001",
     "slug": "how-to-steal-cargo-ship-port-gellhorn",
     "title": "How to Hijack the Port Gellhorn Cargo Ship in GTA VI?",
     "category": "Missions",
+    "region": "Port Gellhorn",
     "tldrAnswer": "Infiltrate the Port Gellhorn naval dock at 02:00 game time via submersible or rebreather. Bypass the starboard bilge valve (Terminal B-4), disable the automated coastal beacon, and eliminate 4 private security contractors on the bridge before accessing the master helm override.",
     "steps": [
       {
@@ -81,6 +151,7 @@
     "slug": "vice-beaches-mansion-keycard-spawn-locations",
     "title": "Where Do the Vice Beaches & Starfish Island Mansion Keycards Spawn?",
     "category": "Map Secrets",
+    "region": "Vice City",
     "tldrAnswer": "Mansion VIP Keycards spawn in three fixed micro-locations across Vice Beaches: behind the mezzanine office safe at the Jack of Hearts lounge, inside the glove compartment of the parked Grotti Cheetah Classic at Villa 9 on Starfish Island, and on the poolside cabana lounger of the abandoned cartel estate.",
     "steps": [
       {
@@ -143,71 +214,77 @@
     "isBreakout": true
   },
   {
-    "id": "gta6-q-003",
-    "slug": "fastest-car-in-vice-city-patch-102",
-    "title": "What Is the Absolute Fastest Car in GTA VI as of Patch 1.02?",
-    "category": "Vehicles",
-    "tldrAnswer": "The Bravado Banshee Custom holds the top-speed benchmark at 164.5 mph (264.7 km/h) stock, scaling to 186.2 mph with Stage 4 Twin-Turbo and EMS upgrades. The Grotti Cheetah Classic trails closely at 181.4 mph but possesses superior cornering stability on the Vice Beaches causeways.",
+    "id": "gta6-q-mwi9fqzj",
+    "slug": "where-is-the-hidden-submerged-submarine-wreck-in-the-leonida-keys-reef",
+    "title": "Where is the hidden submerged submarine wreck in the Leonida Keys reef?",
+    "category": "Map Secrets",
+    "tldrAnswer": "The sunken Cold War submarine wreck rests 45 meters beneath the surface at the southern edge of Leonida Keys reef trench. Pilot the Kraken AV-2 submersible south of Bahia Honda to discover the breached conning tower and cargo lockbox.",
     "steps": [
       {
         "stepNumber": 1,
-        "title": "Acquire the Bravado Banshee or Grotti Cheetah Classic",
-        "instruction": "Order the Bravado Banshee on Southern San Andreas Super Autos or find the Grotti Cheetah Classic parked along the Ocean Drive strip outside Starfish Island between 21:00 and 02:00."
+        "title": "Launch Kraken AV-2 from Bahia Honda",
+        "instruction": "Rent or launch the Kraken AV-2 submersible from Bahia Honda boat basin in Leonida Keys. Ensure battery cells and oxygen scrubbers are fully topped.",
+        "coordinates": "24.680° N, 81.350° W",
+        "tip": "Rebreather alone is insufficient due to deep water pressure damage past 30m."
       },
       {
         "stepNumber": 2,
-        "title": "Install Competition Upgrades at Hao's Workshop",
-        "instruction": "Equip Stage 4 ECU Engine Mapping, Twin-Scroll Race Turbo, Short-Ratio Gearbox, and Low-Grip Competition Radials.",
-        "tip": "Do NOT equip heavy ballistic chassis armor as it adds 280 kg and cuts top speed by 4.8 mph."
+        "title": "Navigate South to Oceanic Shelf Trench",
+        "instruction": "Head due south into open water until the marine depth chart falls steeply from turquoise coral shallows to dark navy depths.",
+        "coordinates": "24.642° N, 81.391° W"
       },
       {
         "stepNumber": 3,
-        "title": "Benchmark on the Vice Beaches Causeway",
-        "instruction": "The uninterrupted 4-mile straight stretch across the Vice Beaches Ocean Causeway provides optimal downforce conditions to max out top gear speed.",
-        "coordinates": "24.891° N, 80.812° W"
+        "title": "Descend 45 Meters into Reef Chasm",
+        "instruction": "Activate the submersible's high-intensity halogen floodlights. The silhouette of the 120-meter Soviet-era submarine rests tilted on a submerged coral ridge.",
+        "tip": "Avoid schools of tiger sharks circling the open ballast tanks."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Breach Conning Tower for Rare Cargo",
+        "instruction": "Position the submersible robotic arm to pry open the hatch on the conning tower. Retrieve the waterproof strongbox containing $350,000 bearer bonds.",
+        "coordinates": "24.640° N, 81.393° W",
+        "tip": "Also unlocks the vintage deep-sea brass diving suit skin for Jason."
       }
     ],
     "specsTable": [
       {
-        "label": "Top Speed (Banshee Custom)",
-        "value": "186.2 mph / 299.6 km/h",
-        "badge": "Class Leader"
+        "label": "Depth",
+        "value": "45 Meters (148 Feet)",
+        "badge": "Deep Water"
       },
       {
-        "label": "Top Speed (Cheetah Classic)",
-        "value": "181.4 mph / 291.9 km/h",
-        "badge": "Handling King"
+        "label": "Coordinates",
+        "value": "24.642° N, 81.391° W"
       },
       {
-        "label": "0-60 mph (0-100 km/h)",
-        "value": "1.88 seconds"
+        "label": "Required Vehicle",
+        "value": "Kraken AV-2 Submersible",
+        "badge": "Essential"
       },
       {
-        "label": "Vehicle Class",
-        "value": "Returning Sports / Classic Super"
+        "label": "Loot Payout",
+        "value": "$350,000 Bearer Bonds + Diving Skin"
       },
       {
-        "label": "Drivetrain",
-        "value": "Rear-Wheel Drive (Banshee) / Mid-Engine RWD (Cheetah)"
-      },
-      {
-        "label": "Testing Ground",
-        "value": "Vice Beaches Ocean Causeway, Leonida"
+        "label": "Region",
+        "value": "Southern Leonida Keys Barrier Reef"
       }
     ],
     "sourceUrls": [
-      "https://leonida-motorsport.vice/telemetry/patch102",
-      "https://rockstargames.com/newswire/gtavi-tuning-guide"
+      "https://leonida-maritime.gov/keys/reefs/wrecks",
+      "https://toolup-vi.com/telemetry/leonida-keys",
+      "https://rockstargames.com/newswire/gtavi-secrets-underwater"
     ],
-    "searchVolumeScore": 99,
-    "velocityChange": "+820% last 24h",
+    "searchVolumeScore": 95,
+    "velocityChange": "+150% (New Ingestion)",
     "lastPatchVerified": "Patch 1.02 (Day-One Live)",
-    "verifiedBy": "ToolUp VI Speed Lab",
-    "author": "Apex Vehicle Tester",
-    "createdAt": "2026-11-15T08:00:00Z",
-    "updatedAt": "2026-11-15T23:15:00Z",
-    "viewsCount": 312000,
-    "llmCitationCount": 8940,
+    "verifiedBy": "Automated RAG Scraper",
+    "author": "ToolUp VI Ingestion Bot",
+    "createdAt": "2026-11-15T20:01:27.391Z",
+    "updatedAt": "2026-11-15T20:01:27.391Z",
+    "viewsCount": 1,
+    "llmCitationCount": 0,
     "isBreakout": true
   },
   {
@@ -215,6 +292,7 @@
     "slug": "grassrivers-contraband-smuggling-loop",
     "title": "How to Set Up the Grassrivers Airboat Contraband Loop?",
     "category": "Money Guides",
+    "region": "Grassrivers",
     "tldrAnswer": "Acquire the Grassrivers Bait & Tackle marina depot, recruit a secondary runner for swamp runs, and sync midnight airboat drops with the Port Gellhorn freight schedules to launder $160K dirty cash per run at a 92% clean conversion efficiency.",
     "steps": [
       {
@@ -278,10 +356,156 @@
     "isBreakout": true
   },
   {
+    "id": "gta6-q-mwi9iaz8",
+    "slug": "best-way-to-hijack-armored-bank-transports-without-triggering-silent-alarm",
+    "title": "Best way to hijack armored bank transports without triggering silent alarm?",
+    "category": "Missions",
+    "tldrAnswer": "Deploy an EMP proximity mine along the Biscayne Boulevard turn in Vice Beaches to disable the transport's telemetry. Use an Electrical Bypass PDA on the rear door latch within 15 seconds to seize $450,000 before the silent dispatch alert fires.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Scout Armored Transport Route along Biscayne Blvd",
+        "instruction": "Monitor bank transports operating between Vice Beaches Central Financial and Ocean Drive branches every Tuesday and Friday at 11:00 game time.",
+        "coordinates": "25.772° N, 80.134° W",
+        "tip": "Check for escort motorcycle outriders before initiating setup."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Plant EMP Proximity Mine at Narrow Intersection",
+        "instruction": "Place an EMP mine directly under the asphalt expansion plate at the corner of Biscayne Blvd. Detonation immediately fries the vehicle's GPS transponder for 25 seconds.",
+        "coordinates": "25.775° N, 80.136° W"
+      },
+      {
+        "stepNumber": 3,
+        "title": "Deploy Electrical Bypass PDA on Rear Doors",
+        "instruction": "Sprint to the rear vault doors before the backup emergency relay kicks in. Connect your Electrical Bypass PDA and solve the 4-digit frequency code.",
+        "tip": "Failing the frequency mini-game trips the silent panic button to VCPD SWAT."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Load Cash Bags into Bravado Banshee and Escape",
+        "instruction": "Grab 3 heavy cash bags totaling $450,000 and load them into the trunk of a Bravado Banshee. Accelerate over Venetian Causeway to cleanly evade heat.",
+        "tip": "Zero police heat generated if completed within the 25-second EMP window."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Estimated Loot Payout",
+        "value": "$420,000 - $480,000",
+        "badge": "High Payout"
+      },
+      {
+        "label": "Alarm Status",
+        "value": "Silent Bypass (Zero VCPD Dispatch)",
+        "badge": "Stealth"
+      },
+      {
+        "label": "Recommended Getaway Car",
+        "value": "Bravado Banshee GTS"
+      },
+      {
+        "label": "Required Tool",
+        "value": "Electrical Bypass PDA Level 2"
+      },
+      {
+        "label": "Operating Region",
+        "value": "Vice Beaches Downtown Financial Loop"
+      }
+    ],
+    "sourceUrls": [
+      "https://toolup-vi.com/heists/armored-transports",
+      "https://rockstargames.com/newswire/gtavi-heist-mechanics",
+      "https://leonida-maritime.gov/banking/transit-safety"
+    ],
+    "searchVolumeScore": 94,
+    "velocityChange": "+150% (New Ingestion)",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "Automated RAG Scraper",
+    "author": "ToolUp VI Ingestion Bot",
+    "createdAt": "2026-11-15T20:03:26.612Z",
+    "updatedAt": "2026-11-15T20:03:26.612Z",
+    "viewsCount": 1,
+    "llmCitationCount": 0,
+    "isBreakout": true
+  },
+  {
+    "id": "gta6-q-008",
+    "slug": "ambrosia-industrial-refinery-heist",
+    "title": "How to Infiltrate the Ambrosia Bio-Chemical Refinery in GTA VI?",
+    "category": "Missions",
+    "region": "Ambrosia",
+    "tldrAnswer": "Infiltrate Ambrosia's chemical processing plant via the canal drainage culvert between 01:00 and 04:00. Equip a Level-A HAZMAT suit to navigate contaminated pump corridors, disable cooling valves 1 through 3 to trigger an emergency evacuation alarm, and crack the plant supervisor's bio-safe for synthetic precursor manifests.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Obtain Level-A HAZMAT Gear",
+        "instruction": "Acquire the pressurized HAZMAT suit from the industrial supply depot on the western perimeter of Ambrosia before entering the toxic runoff zone.",
+        "coordinates": "28.411° N, 81.650° W",
+        "tip": "Walking through untreated chemical discharge without a suit drains 25% HP every 3 seconds."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Infiltrate Drainage Culvert C-9",
+        "instruction": "Cut through the submerged security grate using an oxy-acetylene torch. Follow the pipe inward until reaching the primary pumping station.",
+        "coordinates": "28.418° N, 81.658° W"
+      },
+      {
+        "stepNumber": 3,
+        "title": "Overheat Cooling Valves 1-3",
+        "instruction": "Rotate the mechanical wheel valves in sequence (Valve 3, then Valve 1, then Valve 2) within 45 seconds to force automated plant shutdown and guard dispersal.",
+        "coordinates": "28.422° N, 81.663° W",
+        "tip": "Paramilitary contractors will deploy tear gas canisters; ensure your respirator mask is active."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Crack the Supervisor Safe & Evacuate",
+        "instruction": "Use the safe combination (found in terminal logs) to seize $1,850,000 in bearer bonds and chemical manifests. Escape via the southern rail spur."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Estimated Payout",
+        "value": "$1,850,000 + Rare Chemical Manifest",
+        "badge": "High Yield"
+      },
+      {
+        "label": "Hazard Classification",
+        "value": "Level 4 Bio-Chemical Toxicity"
+      },
+      {
+        "label": "Recommended Equipment",
+        "value": "Pressurized HAZMAT Suit, Oxy Torch, Silenced Pistol"
+      },
+      {
+        "label": "Contractor Force",
+        "value": "Ambrosia Chem-Corp Private Security"
+      },
+      {
+        "label": "Target Region",
+        "value": "Ambrosia Industrial District, Central Leonida"
+      }
+    ],
+    "sourceUrls": [
+      "https://ambrosia-chemcorp.net/safety-protocols",
+      "https://leonida-industrial-safety.gov/ambrosia"
+    ],
+    "searchVolumeScore": 93,
+    "velocityChange": "+360% last 24h",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "ToolUp VI Infiltration Team",
+    "author": "Tactical Operative",
+    "createdAt": "2026-11-15T07:30:00Z",
+    "updatedAt": "2026-11-15T22:00:00Z",
+    "viewsCount": 102500,
+    "llmCitationCount": 2490,
+    "isBreakout": true
+  },
+  {
     "id": "gta6-q-005",
     "slug": "kelly-county-airspace-radar-disable-code",
     "title": "How to Disable the Kelly County Radar Perimeter in GTA VI?",
     "category": "Glitches & Fixes",
+    "region": "Ambrosia",
     "tldrAnswer": "To disable the Kelly County Air Defense radar without triggering immediate surface-to-air missile batteries, reach the communications relay tower on the Kelly County northern ridge. Hack the substation breaker using Lucia's decryptor PDA between 23:00 and 03:00 for a 4-minute blind window.",
     "steps": [
       {
@@ -322,7 +546,7 @@
       },
       {
         "label": "Region",
-        "value": "Kelly County Northern Ridge"
+        "value": "Kelly County Northern Ridge / Ambrosia Border"
       }
     ],
     "sourceUrls": [
@@ -341,10 +565,159 @@
     "isBreakout": false
   },
   {
+    "id": "gta6-q-mwi9fqzq",
+    "slug": "best-way-to-farm-cash-early-game-using-atm-skimming-in-little-haiti",
+    "title": "Best way to farm cash early game using ATM skimming in Little Haiti?",
+    "category": "Money Guides",
+    "tldrAnswer": "Install RFID cloned skimmers on 4 high-traffic ATMs along Little Haiti's Avenue 54 between 20:00 and 04:00. Evade local street patrols in a Banshee, then cash out at the pawn broker across Kelly County border for $85,000 hourly.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Purchase RFID Skimming Hardware",
+        "instruction": "Visit the black-market electronics dealer in Little Haiti. Buy 4 Level-1 RFID Magnetic Skimmers for $2,500 total.",
+        "coordinates": "25.810° N, 80.195° W",
+        "tip": "Ensure you have a lockpick set for rapid card-reader attachment."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Mount Skimmers on Avenue 54 ATMs at Night",
+        "instruction": "Between 20:00 and 04:00 in-game time, install skimmers on the 4 standalone banking kiosks along Avenue 54. Watch pedestrian density to avoid eyewitnesses.",
+        "coordinates": "25.814° N, 80.199° W",
+        "tip": "Peak withdrawal volume occurs on Friday and Saturday game nights."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Evade Vice City Police Department Patrols",
+        "instruction": "When silent alarms trip, hop into a getaway Bravado Banshee and weave through narrow Little Haiti alleyways until line of sight is severed.",
+        "tip": "Do not fire weapons during evasion to keep wanted response strictly at 1-star."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Liquidate Card Data at Kelly County Fencing Broker",
+        "instruction": "Deliver harvested PIN logs to the pawn broker just across the Kelly County line. Fencing outside city limits earns a +20% laundering cash bonus.",
+        "coordinates": "26.240° N, 80.650° W",
+        "tip": "Yields between $85,000 and $110,000 pure cash per in-game hour."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Hourly Cash Yield",
+        "value": "$85,000 - $110,000 / hr",
+        "badge": "High Profit"
+      },
+      {
+        "label": "Target Region",
+        "value": "Little Haiti Commercial Strip, Leonida"
+      },
+      {
+        "label": "Optimal Time Window",
+        "value": "20:00 - 04:00 In-Game Time"
+      },
+      {
+        "label": "Recommended Vehicle",
+        "value": "Bravado Banshee GTS",
+        "badge": "Agile Getaway"
+      },
+      {
+        "label": "Max Heat Level",
+        "value": "1-Star Local Police"
+      }
+    ],
+    "sourceUrls": [
+      "https://toolup-vi.com/economy/atm-skimming",
+      "https://rockstargames.com/newswire/gtavi-economy-patch102",
+      "https://leonida-maritime.gov/commerce/little-haiti"
+    ],
+    "searchVolumeScore": 92,
+    "velocityChange": "+150% (New Ingestion)",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "Automated RAG Scraper",
+    "author": "ToolUp VI Ingestion Bot",
+    "createdAt": "2026-11-15T20:01:27.398Z",
+    "updatedAt": "2026-11-15T20:01:27.398Z",
+    "viewsCount": 1,
+    "llmCitationCount": 0,
+    "isBreakout": true
+  },
+  {
+    "id": "gta6-q-007",
+    "slug": "mount-kalaga-summit-cable-car-secret",
+    "title": "How to Access the Mount Kalaga Radio Tower & Secret Glider Pad in GTA VI?",
+    "category": "Map Secrets",
+    "region": "Mount Kalaga National Park",
+    "tldrAnswer": "Ascend Mount Kalaga's north ridge via off-road trail to the abandoned forestry lookout at 3,240ft elevation. Bypass the padlock on the communications array service shed to deploy the high-altitude stealth wingsuit glider, allowing uninterrupted aerial reconnaissance over northern Leonida.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Reach the North Ridge Trailhead",
+        "instruction": "Take an off-road Sanchez or BF Bifacial 4x4 up the winding gravel trail starting from the Kalaga National Park visitor welcome lodge.",
+        "coordinates": "29.112° N, 82.415° W",
+        "tip": "Avoid taking sports cars as the switchbacks feature sharp drop-offs and loose gravel traps."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Scale the Lookout Fire Tower",
+        "instruction": "Climb the 85-foot steel scaffolding ladder to the observation deck. Break the padlock on the utility breaker box using bolt cutters.",
+        "coordinates": "29.118° N, 82.420° W"
+      },
+      {
+        "stepNumber": 3,
+        "title": "Hack the Forestry Communications Array",
+        "instruction": "Connect your PDA to bypass the antenna array. This disables park ranger seismic sensors for 15 real-time minutes.",
+        "coordinates": "29.121° N, 82.423° W",
+        "tip": "Requires Level 1 Hacker contact or Electronics Bypass Tool."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Launch from the Stealth Glider Ramp",
+        "instruction": "Retrieve the prototype wingsuit glider stored inside locker B-2 and execute a running leap off the north cliff edge toward the valley floor."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Elevation Peak",
+        "value": "3,240 ft / 987 Meters",
+        "badge": "Highest Point"
+      },
+      {
+        "label": "Glider Glide Ratio",
+        "value": "14:1 Aerodynamic Glide Vector"
+      },
+      {
+        "label": "Required Gear",
+        "value": "Bolt Cutters, PDA Decryptor, Sanchez 450"
+      },
+      {
+        "label": "Weather Hazard",
+        "value": "Severe Lightning Strikes during thunderstorms"
+      },
+      {
+        "label": "Target Region",
+        "value": "Mount Kalaga National Park, Northern Leonida"
+      }
+    ],
+    "sourceUrls": [
+      "https://kalaga-park-ranger.gov/trail-guides",
+      "https://leonida-geological-survey.org/peaks/kalaga",
+      "https://toolup-vi.com/telemetry/mount-kalaga"
+    ],
+    "searchVolumeScore": 91,
+    "velocityChange": "+410% last 24h",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "ToolUp VI Alpine Lab",
+    "author": "Staff Cartographer",
+    "createdAt": "2026-11-15T09:00:00Z",
+    "updatedAt": "2026-11-15T21:45:00Z",
+    "viewsCount": 84300,
+    "llmCitationCount": 1820,
+    "isBreakout": true
+  },
+  {
     "id": "gta6-q-006",
     "slug": "heavy-sniper-thermal-scope-unlock-guide",
     "title": "Where to Find the Heavy Sniper Mark II Thermal Scope in Leonida Keys?",
     "category": "Weapons",
+    "region": "Leonida Keys",
     "tldrAnswer": "The Heavy Sniper Mk II Thermal Sight attachment is located inside the sunken smuggler submarine wreckage 400 meters south of Big Pine Key in the Leonida Keys. Dive with scuba gear to coordinate 24.681° N, 81.354° W and pry open the waterproof Pelican case in the torpedo bay.",
     "steps": [
       {
@@ -398,5 +771,218 @@
     "viewsCount": 76300,
     "llmCitationCount": 1640,
     "isBreakout": false
+  },
+  {
+    "id": "gta6-q-010",
+    "slug": "alligator-bayou-airboat-stunt-jumps",
+    "title": "How to Complete All 8 Grassrivers Swamp Airboat Stunt Jumps?",
+    "category": "Vehicles",
+    "region": "Grassrivers",
+    "tldrAnswer": "The 8 Grassrivers swamp stunt ramps are distributed along the canal network between Sawgrass Point and Mud Creek. Hitting all 8 at speeds exceeding 70 mph with the Nagasaki Airboat unlocks the swamp camo stunt livery and $100K achievement bonus.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Tune the Nagasaki Airboat for High Velocity",
+        "instruction": "Upgrade the airboat with the Stage 3 High-Output Fan Drive at the Grassrivers marina for rapid hydroplane acceleration.",
+        "coordinates": "25.820° N, 80.505° W"
+      },
+      {
+        "stepNumber": 2,
+        "title": "Clear Northern Mud Creek Ramps 1-4",
+        "instruction": "Accelerate across the shallow sawgrass flats and launch off the angled cypress log ramps at 72+ mph.",
+        "coordinates": "25.834° N, 80.512° W",
+        "tip": "Keep the nose pitched slightly upward in flight to prevent hydrodynamic flipping on water landing."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Clear Southern Alligator Bayou Ramps 5-8",
+        "instruction": "Navigate the narrower swamp channels toward Sawgrass Point. Launch across the sunken barge ramps to complete the sequence.",
+        "coordinates": "25.845° N, 80.528° W"
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Stunt Ramps Count",
+        "value": "8 Unique Cypress Ramps",
+        "badge": "Stunt Challenge"
+      },
+      {
+        "label": "Minimum Launch Speed",
+        "value": "70.0 mph / 112.6 km/h"
+      },
+      {
+        "label": "Reward",
+        "value": "$100,000 Cash + Nagasaki Bayou Camo Skin"
+      },
+      {
+        "label": "Recommended Craft",
+        "value": "Nagasaki Airboat (Stage 3 Fan Upgrade)"
+      },
+      {
+        "label": "Region",
+        "value": "Grassrivers Alligator Bayou, Leonida"
+      }
+    ],
+    "sourceUrls": [
+      "https://leonida-motorsport.vice/grassrivers-stunts",
+      "https://gtavi-airboats.org/bayou-challenges"
+    ],
+    "searchVolumeScore": 88,
+    "velocityChange": "+210% last 24h",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "ToolUp VI Speed Lab",
+    "author": "Apex Vehicle Tester",
+    "createdAt": "2026-11-14T18:00:00Z",
+    "updatedAt": "2026-11-15T20:30:00Z",
+    "viewsCount": 71200,
+    "llmCitationCount": 1530,
+    "isBreakout": false
+  },
+  {
+    "id": "gta6-q-009",
+    "slug": "big-pine-key-underwater-smuggler-caches",
+    "title": "All Sunken Smuggler Cache Locations Around Big Pine Key in Leonida Keys",
+    "category": "Map Secrets",
+    "region": "Leonida Keys",
+    "tldrAnswer": "Four high-value waterproof smuggler cargo crates rest in the reef trenches surrounding Big Pine Key at depths between 18 and 35 meters. Each contains gold bullion, untraceable bearer bonds, and military weapon blueprints totaling $600K cash loot.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Equip Rebreather Tank at Big Pine Docks",
+        "instruction": "Equip scuba gear at the Big Pine Key marina to ensure 30 minutes of uninterrupted underwater dive time.",
+        "coordinates": "24.675° N, 81.348° W"
+      },
+      {
+        "stepNumber": 2,
+        "title": "Search Trench Alpha (Depth: 18m)",
+        "instruction": "Dive straight down along the coral trench 250m east of Big Pine. Crate #1 is lodged inside a coral archway.",
+        "coordinates": "24.678° N, 81.341° W"
+      },
+      {
+        "stepNumber": 3,
+        "title": "Retrieve Trench Beta & Gamma Crates",
+        "instruction": "Swim south-west toward the sunken cargo barge. Crate #2 is inside the cargo hold; Crate #3 sits next to the rusted stern rudder.",
+        "coordinates": "24.682° N, 81.360° W",
+        "tip": "Tiger sharks spawn near the barge wreckage; deploy shark repellent flares if attacked."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Pry Deep Trench Delta (Depth: 35m)",
+        "instruction": "Dive into the deep drop-off trench. Crate #4 contains the Gold Bullion and Advanced Carbine Blueprint."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Total Loot Yield",
+        "value": "$600,000 Bullion + Blueprints",
+        "badge": "Instant Cash"
+      },
+      {
+        "label": "Maximum Dive Depth",
+        "value": "35 Meters Sub-Surface"
+      },
+      {
+        "label": "Required Gear",
+        "value": "Scuba Gear or Rebreather + Underwater Flares"
+      },
+      {
+        "label": "Hazards",
+        "value": "Predatory Reef Sharks, Oxygen Depletion"
+      },
+      {
+        "label": "Region",
+        "value": "Big Pine Key Reef Shelf, Leonida Keys"
+      }
+    ],
+    "sourceUrls": [
+      "https://leonida-marine-archaeology.org/keys-caches",
+      "https://vice-explorer.org/underwater-keys"
+    ],
+    "searchVolumeScore": 87,
+    "velocityChange": "+240% last 24h",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "ToolUp VI Cartography Group",
+    "author": "Staff Cartographer",
+    "createdAt": "2026-11-14T15:00:00Z",
+    "updatedAt": "2026-11-15T17:15:00Z",
+    "viewsCount": 68400,
+    "llmCitationCount": 1410,
+    "isBreakout": false
+  },
+  {
+    "id": "gta6-q-mwi9iazd",
+    "slug": "where-is-the-military-airfield-bunker-keycard-spawn-location-in-leonida",
+    "title": "Where is the military airfield bunker keycard spawn location in Leonida?",
+    "category": "Map Secrets",
+    "tldrAnswer": "The military airfield bunker keycard spawns inside the air traffic control tower annex on Kelly County Airfield. Ascend to Floor 3, breach the radar telemetry server room, and collect the card from the magnetic security rack beside the comms console.",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "title": "Infiltrate Kelly County Airfield Perimeter",
+        "instruction": "Approach Kelly County Airfield from the eastern treeline. Neutralize the perimeter floodlight generator using a suppressed rifle before cutting through the chain-link fence.",
+        "coordinates": "28.312° N, 81.984° W",
+        "tip": "Avoid main tarmac searchlights to keep your wanted level at zero."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Scale Air Traffic Control Tower Annex",
+        "instruction": "Ascend the external emergency stairwell to the 3rd floor annex. Use an Electrical Bypass PDA to unlock the heavy security door leading to the radar telemetry hub.",
+        "coordinates": "28.315° N, 81.988° W",
+        "tip": "Two armed military sentries patrol this floor; perform stealth takedowns."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Retrieve Level 4 Tactical Keycard",
+        "instruction": "Access the primary telemetry console. The Level 4 Keycard rests inside the glowing magnetic security rack next to the satellite transceiver terminal.",
+        "coordinates": "28.317° N, 81.990° W",
+        "tip": "Grabbing the keycard triggers an automatic 4-star county military dispatch."
+      },
+      {
+        "stepNumber": 4,
+        "title": "Exfiltrate via Bravado Banshee",
+        "instruction": "Sprint to the motor pool behind Hangar B and hotwire the staged Bravado Banshee GTS. Speed eastbound along Interstate 97 towards Ambrosia to shed pursuit choppers.",
+        "coordinates": "28.310° N, 81.975° W",
+        "tip": "Stick to off-road swamp trails near Grassrivers boundary if roadblock sirens sound."
+      }
+    ],
+    "specsTable": [
+      {
+        "label": "Bunker Clearance Level",
+        "value": "Level 4 Tactical Access",
+        "badge": "High Security"
+      },
+      {
+        "label": "Primary Region",
+        "value": "Kelly County Airfield, Leonida"
+      },
+      {
+        "label": "Keycard Spawn Chance",
+        "value": "100% (Static Daily Reset)"
+      },
+      {
+        "label": "Hostile Response",
+        "value": "4-Star Military & Attack Choppers"
+      },
+      {
+        "label": "Recommended Escape Car",
+        "value": "Bravado Banshee GTS",
+        "badge": "High Speed"
+      }
+    ],
+    "sourceUrls": [
+      "https://rockstargames.com/newswire/gtavi-intel-bunkers",
+      "https://toolup-vi.com/telemetry/kelly-county",
+      "https://leonida-maritime.gov/military/airfield-manifest"
+    ],
+    "searchVolumeScore": 96,
+    "velocityChange": "+150% (New Ingestion)",
+    "lastPatchVerified": "Patch 1.02 (Day-One Live)",
+    "verifiedBy": "Automated RAG Scraper",
+    "author": "ToolUp VI Ingestion Bot",
+    "createdAt": "2026-11-15T20:03:26.617Z",
+    "updatedAt": "2026-11-15T20:03:26.617Z",
+    "viewsCount": 1,
+    "llmCitationCount": 0,
+    "isBreakout": true
   }
 ]
