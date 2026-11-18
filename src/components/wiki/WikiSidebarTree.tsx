@@ -128,8 +128,8 @@ export function WikiSidebarTree({
       {/* Category Tree Sections Header */}
       <div className="flex items-center justify-between text-[10px] uppercase tracking-wider text-[#64748B] font-bold px-2 mb-2">
         <span>Leonida Regions (6)</span>
-        <span className="text-[9px] px-1.5 py-0.2 rounded bg-[#181B26] text-[#94A3B8]">
-          Patch 1.02
+        <span className="text-[9px] px-1.5 py-0.5 rounded bg-[#181B26] text-emerald-400 font-semibold">
+          Launch Build · Nov 2026
         </span>
       </div>
 

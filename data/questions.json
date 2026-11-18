@@ -11,13 +11,13 @@
         "stepNumber": 1,
         "title": "Locate a Functional Leonida Federal ATM",
         "instruction": "Search convenience store exteriors, gas stations in Vice Beaches, and bank lobbies in Downtown for glowing green ATM terminals.",
-        "coordinates": "25.761\u00b0 N, 80.191\u00b0 W",
+        "coordinates": "25.761° N, 80.191° W",
         "tip": "Avoid using high-traffic outdoor ATMs in Little Haiti at night as mugging random encounters are frequent."
       },
       {
         "stepNumber": 2,
         "title": "Select Active Character Checking Account",
-        "instruction": "Interact with the terminal (D-Pad Right). Confirm whether you are depositing as Jason or Lucia. Balances are strictly individual\u2014Lucia cannot draw from Jason's account until joint heist operations unlock."
+        "instruction": "Interact with the terminal (D-Pad Right). Confirm whether you are depositing as Jason or Lucia. Balances are strictly individual—Lucia cannot draw from Jason's account until joint heist operations unlock."
       },
       {
         "stepNumber": 3,
@@ -28,7 +28,7 @@
         "stepNumber": 4,
         "title": "Alternative: Wireless Banking via BuckMe App",
         "instruction": "Alternatively, open the in-game smartphone and launch the BuckMe peer-to-peer banking app to transfer liquid funds between Jason and Lucia without visiting a physical kiosk.",
-        "tip": "Keep at least  in cash on-person to pay immediate road tolls and emergency bribes."
+        "tip": "Keep at least $250 in cash on-person to pay immediate road tolls and emergency bribes."
       }
     ],
     "specsTable": [
@@ -44,7 +44,7 @@
       },
       {
         "label": "ATM Deposit Fee",
-        "value": "/bin/zsh (Municipal Terminals)"
+        "value": "$0 (Municipal Terminals)"
       },
       {
         "label": "P2P Mobile Banking",
@@ -61,13 +61,12 @@
     ],
     "searchVolumeScore": 98,
     "velocityChange": "+740% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build · Nov 2026",
     "verifiedBy": "Economy & Banking Group",
     "author": "Lead Economy Researcher",
     "createdAt": "2026-11-15T12:00:00Z",
     "updatedAt": "2026-11-18T10:00:00Z",
     "viewsCount": 284000,
-    
     "llmCitationCount": 4210,
     "isBreakout": true
   },
@@ -83,7 +82,7 @@
         "stepNumber": 1,
         "title": "Evade the Initial Stolen Vehicle Telemetry Ping",
         "instruction": "High-tier sports cars trigger automatic LoJack telemetry alerts to county police within 90 seconds of hotwiring. Escape the immediate radius before the transponder broad-beacons.",
-        "coordinates": "27.142\u00b0 N, 82.319\u00b0 W",
+        "coordinates": "27.142° N, 82.319° W",
         "tip": "Avoid major highway toll gantries as they scan and log stolen transponder tags instantly."
       },
       {
@@ -94,27 +93,27 @@
       {
         "stepNumber": 3,
         "title": "Pay the VIN Clone & Tracker Stripping Fee",
-        "instruction": "Pay the fence technician (,500 for standard sedans, up to ,500 for exotic supercars) to scrub factory ECU logs and assign a clean spoofed serial."
+        "instruction": "Pay the fence technician ($1,500 for standard sedans, up to $5,000 for exotic supercars) to scrub factory ECU logs and assign a clean spoofed serial."
       },
       {
         "stepNumber": 4,
         "title": "Re-Plate and Re-Spray at Pay N' Spray or Rideout Customs",
-        "instruction": "Drive into Pay N' Spray (available in base game) or Rideout Customs [Ultimate Edition Exclusive] to apply fresh paint and register new Leonida license plates, permanently binding the vehicle to your garage roster."
+        "instruction": "Drive into Pay N' Spray (available in base game) or Rideout Customs (Ultimate Edition) to apply fresh paint and register new Leonida license plates, permanently binding the vehicle to your garage roster."
       }
     ],
     "specsTable": [
       {
         "label": "Key Vehicle Fences",
-        "value": "Port Gellhorn Docks (Base), One-Eyed Willie's Mod Shop [Ultimate Edition Exclusive]",
+        "value": "Port Gellhorn Docks (Base), One-Eyed Willie's Mod Shop (Ultimate Edition)",
         "badge": "Chop Shops"
       },
       {
         "label": "Registration Garages",
-        "value": "Pay N' Spray (Base Game), Rideout Customs [Ultimate Edition Exclusive]"
+        "value": "Pay N' Spray (Base Game), Rideout Customs (Ultimate Edition)"
       },
       {
         "label": "Tracker Removal Cost",
-        "value": ",500 (Standard) to ,500 (Exotic Supercar)"
+        "value": "$1,500 (Standard) to $5,000 (Exotic Supercar)"
       },
       {
         "label": "LoJack Police Ping Timer",
@@ -132,7 +131,7 @@
     ],
     "searchVolumeScore": 96,
     "velocityChange": "+490% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build · Nov 2026",
     "verifiedBy": "Vehicle Telemetry Group",
     "author": "Staff Wheelman",
     "createdAt": "2026-11-15T14:30:00Z",
@@ -153,7 +152,7 @@
         "stepNumber": 1,
         "title": "Understand Player Inventory Limits",
         "instruction": "Jason and Lucia can physically holster 2 handguns (revolvers/pistols) and sling 2 primary weapons across shoulders. Equipping a heavy launcher replaces one shoulder slot.",
-        "coordinates": "25.819\u00b0 N, 80.498\u00b0 W"
+        "coordinates": "25.819° N, 80.498° W"
       },
       {
         "stepNumber": 2,
@@ -164,7 +163,7 @@
       {
         "stepNumber": 3,
         "title": "Tailor Ordnance for Mission Objectives",
-        "instruction": "Swap out weapons before entering a mission zone\u2014stow heavy sniper rifles for distance overwatch or retrieve breaching shotguns for close-quarters room clearances."
+        "instruction": "Swap out weapons before entering a mission zone—stow heavy sniper rifles for distance overwatch or retrieve breaching shotguns for close-quarters room clearances."
       },
       {
         "stepNumber": 4,
@@ -201,7 +200,7 @@
     ],
     "searchVolumeScore": 99,
     "velocityChange": "+820% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build · Nov 2026",
     "verifiedBy": "Combat Tactics Group",
     "author": "Tactical Armorer",
     "createdAt": "2026-11-15T08:00:00Z",
@@ -215,19 +214,19 @@
     "slug": "how-the-5-rank-criminal-profile-system-works",
     "title": "How Does the 5-Rank Criminal Profile System Work in GTA VI?",
     "category": "Criminal Profile & Heat",
-    "region": "Kelly County",
-    "tldrAnswer": "GTA VI replaces simple wanted stars with an overarching 5-Rank Criminal Profile system scaling from Professional (Rank 1), Notorious (Rank 2), Hardened (Rank 3), Menace (Rank 4), to Irredeemable (Rank 5). Higher notoriety increases police dispatch severity, facial recognition surveillance cameras, and county-line roadblocks across Leonida jurisdictions.",
+    "region": "Ambrosia",
+    "tldrAnswer": "GTA VI replaces simple wanted stars with an overarching 5-Rank Criminal Profile system scaling from Professional, Hardened, Violent, Psycho, to Irredeemable. Higher notoriety increases police dispatch severity, facial recognition surveillance cameras, and county-line roadblocks across Leonida jurisdictions.",
     "steps": [
       {
         "stepNumber": 1,
         "title": "Understand the 5 Notoriety Ranks",
-        "instruction": "Criminal profiles scale across 5 tiers: Professional (Rank 1), Notorious (Rank 2), Hardened (Rank 3), Menace (Rank 4), and Irredeemable (Rank 5). The Hardened tier introduces tactical SWAT deployments and cross-county dispatch alerts.",
-        "coordinates": "28.309\u00b0 N, 81.992\u00b0 W"
+        "instruction": "Criminal profiles scale across 5 tiers: Professional, Hardened, Violent, Psycho, and Irredeemable. The Hardened tier introduces tactical SWAT deployments and cross-county dispatch alerts, while Violent and Psycho trigger air support and heavy roadblocks.",
+        "coordinates": "28.309° N, 81.992° W"
       },
       {
         "stepNumber": 2,
         "title": "Navigate Multi-Jurisdiction County Heat",
-        "instruction": "Crime heat is tracked per county. Vice City Metro Police dispatches do not immediately alert Kelly County Sheriffs or Port Gellhorn Port Authority unless your notoriety is Hardened (Rank 3) or higher."
+        "instruction": "Crime heat is tracked per county. Vice City Metro Police dispatches do not immediately alert Kelly County Sheriffs or Port Gellhorn Port Authority unless your notoriety is Hardened (Rank 2) or higher."
       },
       {
         "stepNumber": 3,
@@ -244,7 +243,7 @@
     "specsTable": [
       {
         "label": "Profile Ranks",
-        "value": "Professional (1), Notorious (2), Hardened (3), Menace (4), Irredeemable (5)",
+        "value": "Professional, Hardened, Violent, Psycho, Irredeemable",
         "badge": "5 Tiers"
       },
       {
@@ -270,7 +269,7 @@
     ],
     "searchVolumeScore": 94,
     "velocityChange": "+390% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build · Nov 2026",
     "verifiedBy": "Jurisdiction & Heat Research",
     "author": "Tactical Operative",
     "createdAt": "2026-11-14T11:00:00Z",
@@ -291,7 +290,7 @@
         "stepNumber": 1,
         "title": "Open the In-Game Smartphone OS & Launch Apps",
         "instruction": "Press the smartphone d-pad button to access installed Leonida utility applications, financial wallets, rideshare tools, and social feeds.",
-        "coordinates": "25.761\u00b0 N, 80.191\u00b0 W"
+        "coordinates": "25.761° N, 80.191° W"
       },
       {
         "stepNumber": 2,
@@ -318,7 +317,6 @@
       },
       {
         "label": "BuckMe Banking",
-        
         "value": "Instant wire transfer between Jason & Lucia without ATM trip"
       },
       {
@@ -327,7 +325,7 @@
       },
       {
         "label": "Scooter Bros Payouts",
-        "value": " - ,500 per courier gig"
+        "value": "$250 - $1,500 per courier gig"
       },
       {
         "label": "Witness Social Mechanics",
@@ -340,7 +338,7 @@
     ],
     "searchVolumeScore": 92,
     "velocityChange": "+290% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build · Nov 2026",
     "verifiedBy": "App Ecosystem Group",
     "author": "Staff Technologist",
     "createdAt": "2026-11-14T09:15:00Z",
@@ -360,38 +358,38 @@
       {
         "stepNumber": 1,
         "title": "Vice City (Metropolitan Ocean & Nightlife Core)",
-        "instruction": "The neon-drenched metropolis spanning Ocean Drive, Starfish Island, Vice Beaches, and Downtown high-rises. Visit Rideout Customs [Ultimate Edition Exclusive] or local Pay N' Spray for vehicle customization.",
-        "coordinates": "25.761\u00b0 N, 80.191\u00b0 W"
+        "instruction": "The neon-drenched metropolis spanning Ocean Drive, Starfish Island, Vice Beaches, and Downtown high-rises. Visit Rideout Customs (Ultimate Edition) or local Pay N' Spray for vehicle customization.",
+        "coordinates": "25.761° N, 80.191° W"
       },
       {
         "stepNumber": 2,
         "title": "Leonida Keys (Southern Archipelago & Coral Reefs)",
         "instruction": "Subtropical island chain connected by the Overseas Highway. Features maritime dive shops, sunken U-boat wrecks, and coastal boat charters near Big Pine Key.",
-        "coordinates": "24.681\u00b0 N, 81.354\u00b0 W"
+        "coordinates": "24.681° N, 81.354° W"
       },
       {
         "stepNumber": 3,
         "title": "Grassrivers (Central Wetland Marshes & Sawgrass Flats)",
         "instruction": "Expansive alligator-infested swamps where bait & tackle depots supply swamp airboats and moonshine transit lines cut through tidal channels.",
-        "coordinates": "25.819\u00b0 N, 80.498\u00b0 W"
+        "coordinates": "25.819° N, 80.498° W"
       },
       {
         "stepNumber": 4,
         "title": "Port Gellhorn (Industrial Freight & Deep-Water Port)",
         "instruction": "Western coastal shipping hub hosting underground vehicle transponder fences, container cranes, and heavy industrial cargo docks.",
-        "coordinates": "27.142\u00b0 N, 82.319\u00b0 W"
+        "coordinates": "27.142° N, 82.319° W"
       },
       {
         "stepNumber": 5,
         "title": "Ambrosia & Kelly County (Agricultural Heartland)",
-        "instruction": "Central farming and chemical heartland featuring Pawn & Gun retailers, PTT Youngin$ [Ultimate Edition Exclusive] apparel & customization outpost, and agricultural precursor storage facilities.",
-        "coordinates": "28.411\u00b0 N, 81.650\u00b0 W"
+        "instruction": "Central farming and chemical heartland featuring Pawn & Gun retailers, PTT Youngin$ (Ultimate Edition) apparel & customization outpost, and agricultural precursor storage facilities.",
+        "coordinates": "28.411° N, 81.650° W"
       },
       {
         "stepNumber": 6,
         "title": "Mount Kalaga National Park (Northern Alpine Summit)",
         "instruction": "Leonida's highest vertical peak rising 3,240 feet above sea level. Packed with forestry fire lookouts, hidden glider launches, and Phil's Ammu-Nation mountain outpost.",
-        "coordinates": "29.112\u00b0 N, 82.415\u00b0 W"
+        "coordinates": "29.112° N, 82.415° W"
       }
     ],
     "specsTable": [
@@ -424,7 +422,7 @@
     ],
     "searchVolumeScore": 97,
     "velocityChange": "+610% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build · Nov 2026",
     "verifiedBy": "Cartography & Commerce Group",
     "author": "Lead Cartographer",
     "createdAt": "2026-11-15T16:00:00Z",

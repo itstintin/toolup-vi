@@ -35,7 +35,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
         "stepNumber": 4,
         "title": "Alternative: Wireless Banking via BuckMe App",
         "instruction": "Alternatively, open the in-game smartphone and launch the BuckMe peer-to-peer banking app to transfer liquid funds between Jason and Lucia without visiting a physical kiosk.",
-        "tip": "Keep at least  in cash on-person to pay immediate road tolls and emergency bribes."
+        "tip": "Keep at least $250 in cash on-person to pay immediate road tolls and emergency bribes."
       }
     ],
     "specsTable": [
@@ -51,7 +51,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       },
       {
         "label": "ATM Deposit Fee",
-        "value": "/bin/zsh (Municipal Terminals)"
+        "value": "$0 (Municipal Terminals)"
       },
       {
         "label": "P2P Mobile Banking",
@@ -101,27 +101,27 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       {
         "stepNumber": 3,
         "title": "Pay the VIN Clone & Tracker Stripping Fee",
-        "instruction": "Pay the fence technician (,500 for standard sedans, up to ,500 for exotic supercars) to scrub factory ECU logs and assign a clean spoofed serial."
+        "instruction": "Pay the fence technician ($1,500 for standard sedans, up to $5,000 for exotic supercars) to scrub factory ECU logs and assign a clean spoofed serial."
       },
       {
         "stepNumber": 4,
         "title": "Re-Plate and Re-Spray at Pay N' Spray or Rideout Customs",
-        "instruction": "Drive into Pay N' Spray (available in base game) or Rideout Customs [Ultimate Edition Exclusive] to apply fresh paint and register new Leonida license plates, permanently binding the vehicle to your garage roster."
+        "instruction": "Drive into Pay N' Spray (available in base game) or Rideout Customs (Ultimate Edition) to apply fresh paint and register new Leonida license plates, permanently binding the vehicle to your garage roster."
       }
     ],
     "specsTable": [
       {
         "label": "Key Vehicle Fences",
-        "value": "Port Gellhorn Docks (Base), One-Eyed Willie's Mod Shop [Ultimate Edition Exclusive]",
+        "value": "Port Gellhorn Docks (Base), One-Eyed Willie's Mod Shop (Ultimate Edition)",
         "badge": "Chop Shops"
       },
       {
         "label": "Registration Garages",
-        "value": "Pay N' Spray (Base Game), Rideout Customs [Ultimate Edition Exclusive]"
+        "value": "Pay N' Spray (Base Game), Rideout Customs (Ultimate Edition)"
       },
       {
         "label": "Tracker Removal Cost",
-        "value": ",500 (Standard) to ,500 (Exotic Supercar)"
+        "value": "$1,500 (Standard) to $5,000 (Exotic Supercar)"
       },
       {
         "label": "LoJack Police Ping Timer",
@@ -222,19 +222,19 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
     "slug": "how-the-5-rank-criminal-profile-system-works",
     "title": "How Does the 5-Rank Criminal Profile System Work in GTA VI?",
     "category": "Criminal Profile & Heat",
-    "region": "Kelly County",
-    "tldrAnswer": "GTA VI replaces simple wanted stars with an overarching 5-Rank Criminal Profile system scaling from Professional (Rank 1), Notorious (Rank 2), Hardened (Rank 3), Menace (Rank 4), to Irredeemable (Rank 5). Higher notoriety increases police dispatch severity, facial recognition surveillance cameras, and county-line roadblocks across Leonida jurisdictions.",
+    "region": "Ambrosia",
+    "tldrAnswer": "GTA VI replaces simple wanted stars with an overarching 5-Rank Criminal Profile system scaling from Professional, Hardened, Violent, Psycho, to Irredeemable. Higher notoriety increases police dispatch severity, facial recognition surveillance cameras, and county-line roadblocks across Leonida jurisdictions.",
     "steps": [
       {
         "stepNumber": 1,
         "title": "Understand the 5 Notoriety Ranks",
-        "instruction": "Criminal profiles scale across 5 tiers: Professional (Rank 1), Notorious (Rank 2), Hardened (Rank 3), Menace (Rank 4), and Irredeemable (Rank 5). The Hardened tier introduces tactical SWAT deployments and cross-county dispatch alerts.",
+        "instruction": "Criminal profiles scale across 5 tiers: Professional, Hardened, Violent, Psycho, and Irredeemable. The Hardened tier introduces tactical SWAT deployments and cross-county dispatch alerts, while Violent and Psycho trigger air support and heavy roadblocks.",
         "coordinates": "28.309\u00b0 N, 81.992\u00b0 W"
       },
       {
         "stepNumber": 2,
         "title": "Navigate Multi-Jurisdiction County Heat",
-        "instruction": "Crime heat is tracked per county. Vice City Metro Police dispatches do not immediately alert Kelly County Sheriffs or Port Gellhorn Port Authority unless your notoriety is Hardened (Rank 3) or higher."
+        "instruction": "Crime heat is tracked per county. Vice City Metro Police dispatches do not immediately alert Kelly County Sheriffs or Port Gellhorn Port Authority unless your notoriety is Hardened (Rank 2) or higher."
       },
       {
         "stepNumber": 3,
@@ -251,7 +251,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
     "specsTable": [
       {
         "label": "Profile Ranks",
-        "value": "Professional (1), Notorious (2), Hardened (3), Menace (4), Irredeemable (5)",
+        "value": "Professional, Hardened, Violent, Psycho, Irredeemable",
         "badge": "5 Tiers"
       },
       {
@@ -334,7 +334,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       },
       {
         "label": "Scooter Bros Payouts",
-        "value": " - ,500 per courier gig"
+        "value": "$250 - $1,500 per courier gig"
       },
       {
         "label": "Witness Social Mechanics",
@@ -367,7 +367,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       {
         "stepNumber": 1,
         "title": "Vice City (Metropolitan Ocean & Nightlife Core)",
-        "instruction": "The neon-drenched metropolis spanning Ocean Drive, Starfish Island, Vice Beaches, and Downtown high-rises. Visit Rideout Customs [Ultimate Edition Exclusive] or local Pay N' Spray for vehicle customization.",
+        "instruction": "The neon-drenched metropolis spanning Ocean Drive, Starfish Island, Vice Beaches, and Downtown high-rises. Visit Rideout Customs (Ultimate Edition) or local Pay N' Spray for vehicle customization.",
         "coordinates": "25.761\u00b0 N, 80.191\u00b0 W"
       },
       {
@@ -391,7 +391,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       {
         "stepNumber": 5,
         "title": "Ambrosia & Kelly County (Agricultural Heartland)",
-        "instruction": "Central farming and chemical heartland featuring Pawn & Gun retailers, PTT Youngin$ [Ultimate Edition Exclusive] apparel & customization outpost, and agricultural precursor storage facilities.",
+        "instruction": "Central farming and chemical heartland featuring Pawn & Gun retailers, PTT Youngin$ (Ultimate Edition) apparel & customization outpost, and agricultural precursor storage facilities.",
         "coordinates": "28.411\u00b0 N, 81.650\u00b0 W"
       },
       {
@@ -471,11 +471,11 @@ export function ensureDataFile(): void {
         raw.includes("Missions") ||
         raw.includes("Money Guides") ||
         raw.includes("Map Secrets") ||
-        raw.includes("Fort Zancudo") ||
-        raw.includes("Club Malibu") ||
-        raw.includes("Le Mirage") ||
-        raw.includes("Grotti Furia GTS") ||
-        raw.includes("Kelly AFB")
+        raw.includes("Ambrosia") ||
+        raw.includes("Pawn & Gun") ||
+        raw.includes("Phil's Ammu-Nation") ||
+        raw.includes("1955 Vapid Stanier") ||
+        raw.includes("Port Gellhorn")
       ) {
         fs.writeFileSync(DB_FILE, JSON.stringify(SEED_QUESTIONS, null, 2), "utf-8");
       }
