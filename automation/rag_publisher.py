@@ -86,13 +86,49 @@ RETURNING_VEHICLES = [
 ]
 
 VALID_CATEGORIES = [
-    "Missions",
-    "Money Guides",
-    "Vehicles",
-    "Weapons",
-    "Map Secrets",
+    "Money & ATMs",
+    "Map & Regions",
+    "Vehicles & Fences",
+    "Weapons & Loadouts",
+    "Criminal Profile & Heat",
     "Glitches & Fixes",
 ]
+
+VERIFIED_GTA6_CANON = """
+You are the official GTA VI intelligence research system for the State of Leonida.
+You strictly enforce confirmed Rockstar Games canon, locations, and gameplay mechanics.
+
+CONFIRMED REGIONS (6 TOTAL):
+1. Vice City (Urban metropolitan center, Ocean Drive, Starfish Island, Vice Beaches, Downtown)
+2. Leonida Keys (Subtropical archipelago, Overseas Highway, Big Pine Key, sunken wrecks)
+3. Grassrivers (Central sawgrass wetlands, tidal bayous, airboat contraband routes)
+4. Port Gellhorn (Western industrial deep-water seaport, cargo container terminals)
+5. Ambrosia (Central agricultural heartland, Kelly County ridge, chemical refineries)
+6. Mount Kalaga National Park (Northern alpine wilderness, 3,240ft summit, forestry trails)
+
+PROTAGONISTS & BANKING:
+- Dual protagonists: Jason Duval & Lucia Caminos.
+- Cash management: Independent checking accounts per character. Physical cash is lost on arrest/death; deposit at ATMs or transfer via the BuckMe smartphone app.
+
+VEHICLE & WEAPON SYSTEMS:
+- Car Trunk Armory: Players can physically carry only 2 concealed handguns and 2 slung long weapons. All additional ordnance must be stored in personal car trunks.
+- GPS Transponder Stripping: Stolen high-end cars beacon LoJack pings within 90s. Must be stripped at chop-shop fences before VIN re-plating at Pay N' Spray (Base Game).
+- Retail Exclusivity: Rideout Customs, One-Eyed Willie's Mod Shop, and PTT Youngin$ must be tagged as [Ultimate Edition Exclusive]. Base retailers are Phil's Ammu-Nation, Pay N' Spray, and Pawn & Gun.
+
+CRIMINAL PROFILE & HEAT:
+- 5 Notoriety Ranks: Professional (1), Notorious (2), Hardened (3), Menace (4), and Irredeemable (5).
+- Multi-jurisdiction law enforcement (Vice City Metro Police vs Kelly County Sheriff). Heat cools 3x faster in rural safehouses.
+
+SMARTPHONE APPS:
+- WAINK: Viral short-form video feed for ambient event leaks and live street incidents.
+- Scooter Bros: Fast courier delivery contracts and vehicle rental gig work.
+- BuckMe: Zero-fee peer-to-peer wireless banking between Jason and Lucia.
+- RydeMe: On-demand rideshare summoning and emergency getaway pickup across all regions.
+
+ANTI-HALLUCINATION GUARDRAILS:
+- STRICTLY FORBIDDEN: Any reference to GTA V locations (Los Santos, Blaine County, Fort Zancudo, Sandy Shores, Paleto Bay, Mount Chiliad).
+- STRICTLY FORBIDDEN: PC-only launch rumors, GTA VI Online rumors, or unverified leaks.
+"""
 
 # High-Precision Grounded Knowledge Base for Queued Ingestions
 CURATED_GROUNDED_DATABASE: Dict[str, Dict[str, Any]] = {
@@ -854,7 +890,7 @@ def research_and_ground_question(question: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def validate_ingestion_payload(payload: Dict[str, Any]) -> Tuple[bool, List[str]]:
-    """Strictly validate payload against Next.js IngestSchema rules."""
+    """Strictly validate payload against Next.js IngestSchema rules and anti-hallucination guardrails."""
     errors = []
     if not payload.get("question_title") or len(payload["question_title"]) < 5:
         errors.append("question_title must be >= 5 characters")
@@ -871,6 +907,21 @@ def validate_ingestion_payload(payload: Dict[str, Any]) -> Tuple[bool, List[str]
         errors.append(f"tldr_answer must be >= 20 characters (got {len(tldr)})")
     if count_words(tldr) >= 60:
         errors.append(f"tldr_answer must be under 60 words (got {count_words(tldr)} words)")
+
+    # Anti-Hallucination Lore Validation Guard
+    forbidden_terms = [
+        "los santos", "blaine county", "fort zancudo", "sandy shores",
+        "paleto bay", "mount chiliad", "gta online", "pc launch", "pc release"
+    ]
+    full_text = (
+        payload.get("question_title", "") + " " +
+        payload.get("tldr_answer", "") + " " +
+        json.dumps(payload.get("steps_markdown", ""))
+    ).lower()
+
+    for term in forbidden_terms:
+        if term in full_text:
+            errors.append(f"Anti-hallucination guardrail violation: '{term}' detected. Must be marked draft/rejected.")
 
     sources = payload.get("source_urls", [])
     for url in sources:

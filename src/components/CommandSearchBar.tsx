@@ -141,7 +141,7 @@ export function CommandSearchBar({
                   : "bg-[#12141D] text-[#94A3B8] border-[#1F2430] hover:text-[#F3F4F6] hover:border-[#2A3142]"
               }`}
             >
-              {cat === "All" ? "All Telemetry" : cat}
+              {cat === "All" ? "All Guides" : cat}
             </button>
           );
         })}
@@ -159,7 +159,7 @@ export function CommandSearchBar({
             <div className="p-6 text-center text-sm text-[#94A3B8]">
               No verified records found for <span className="text-[#F3F4F6]">"{query}"</span>.
               <div className="text-xs text-[#64748B] mt-1 font-mono">
-                External RAG scraper automatically queues missing queries.
+                Leonida guide index updates continuously.
               </div>
             </div>
           ) : (

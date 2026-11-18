@@ -57,11 +57,11 @@ INTENT_KEYWORDS = [
 
 # Valid taxonomy categories matching ToolUp VI schema
 VALID_CATEGORIES = [
-    "Missions",
-    "Money Guides",
-    "Vehicles",
-    "Weapons",
-    "Map Secrets",
+    "Money & ATMs",
+    "Map & Regions",
+    "Vehicles & Fences",
+    "Weapons & Loadouts",
+    "Criminal Profile & Heat",
     "Glitches & Fixes",
 ]
 
@@ -71,29 +71,33 @@ CATEGORY_RULES = {
         r"\bglitch\b", r"\bbug\b", r"\bexploit\b", r"\bcrash\b", r"\bfreeze\b",
         r"\bstuck\b", r"\bfix\b", r"\bfps\b", r"\bstutter\b", r"\bbypass\b"
     ],
-    "Money Guides": [
+    "Money & ATMs": [
         r"\bmoney\b", r"\bcash\b", r"\bprofit\b", r"\bfarm\b", r"\brich\b",
-        r"\bearn\b", r"\bpayout\b", r"\batm\b", r"\bheist payout\b", r"\bbest way to make money\b"
+        r"\bearn\b", r"\bpayout\b", r"\batm\b", r"\bdeposit\b", r"\bbuckme\b",
+        r"\bbest way to make money\b"
     ],
-    "Weapons": [
+    "Weapons & Loadouts": [
         r"\bweapon\b", r"\bgun\b", r"\brifle\b", r"\bsniper\b", r"\bcarbine\b",
-        r"\bexplosive\b", r"\barmory\b", r"\bpistol\b", r"\bsuppressor\b", r"\bloadout\b"
+        r"\bexplosive\b", r"\barmory\b", r"\bpistol\b", r"\bsuppressor\b",
+        r"\bloadout\b", r"\btrunk weapon\b", r"\bammu-nation\b"
     ],
-    "Vehicles": [
+    "Vehicles & Fences": [
         r"\bvehicle\b", r"\bcar\b", r"\bplane\b", r"\bjet\b", r"\bboat\b",
         r"\bskimmer\b", r"\bchopper\b", r"\bhelicopter\b", r"\bsubmersible\b",
-        r"\bcheetah\b", r"\bseaplane\b", r"\bgarage\b", r"\bhovercraft\b"
+        r"\bcheetah\b", r"\bseaplane\b", r"\bgarage\b", r"\bhovercraft\b",
+        r"\bfence\b", r"\bpay n spray\b", r"\brideout customs\b", r"\btracker\b"
     ],
-    "Map Secrets": [
+    "Map & Regions": [
         r"\bwhere is\b", r"\bspawn location\b", r"\bkeycard\b", r"\bbunker\b",
         r"\bsecret\b", r"\beaster egg\b", r"\bhidden\b", r"\bcoordinates\b",
         r"\bstarfish island\b", r"\bvice beach\b", r"\bleonida keys\b",
-        r"\bport gellhorn\b", r"\bambrosia\b", r"\bgrassrivers\b", r"\bkalaga\b"
+        r"\bport gellhorn\b", r"\bambrosia\b", r"\bgrassrivers\b", r"\bkalaga\b",
+        r"\bregion\b", r"\bpoi\b", r"\bmap\b"
     ],
-    "Missions": [
-        r"\bmission\b", r"\bheist\b", r"\bquest\b", r"\bobjective\b", r"\bunlock\b",
-        r"\bhow to\b", r"\bchapter\b", r"\bjob\b", r"\btask\b", r"\bboss\b",
-        r"\bneutralize\b", r"\binfiltrate\b"
+    "Criminal Profile & Heat": [
+        r"\bprofile\b", r"\bheat\b", r"\bwanted\b", r"\bpolice\b", r"\bcop\b",
+        r"\bswat\b", r"\broadblock\b", r"\bnotoriety\b", r"\bhardened\b",
+        r"\birredeemable\b", r"\bcctv\b", r"\bfacial recognition\b"
     ],
 }
 

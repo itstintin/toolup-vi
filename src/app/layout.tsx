@@ -98,12 +98,12 @@ export default function RootLayout({
                   Verified Data Categories
                 </h4>
                 <ul className="space-y-1.5">
-                  <li>Missions & Heists (Port Gellhorn)</li>
-                  <li>Vehicle Benchmarks (Banshee & Cheetah)</li>
-                  <li>Money Loops (Grassrivers Contraband)</li>
-                  <li>Airspace Defense (Kelly County & Ambrosia)</li>
-                  <li>Map Secrets (Vice Beaches & Keys)</li>
-                  <li>Alpine Exploration (Mount Kalaga)</li>
+                  <li>Money & ATMs (Leonida Banking)</li>
+                  <li>Map & Regions (Vice City to Kalaga)</li>
+                  <li>Vehicles & Fences (GPS Tracker Removal)</li>
+                  <li>Weapons & Loadouts (Trunk Armory)</li>
+                  <li>Criminal Profile & Heat (5-Rank System)</li>
+                  <li>Glitches & Fixes (WAINK, BuckMe & RydeMe)</li>
                 </ul>
               </div>
 
@@ -114,11 +114,11 @@ export default function RootLayout({
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-emerald-400">
                     <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-                    <span>Game Patch: 1.02 Live</span>
+                    <span>Game Build: Launch Build · Nov 2026</span>
                   </div>
                   <div className="flex items-center gap-2 text-[#00F0FF]">
                     <Cpu className="w-3.5 h-3.5" />
-                    <span>RAG Ingestion: Active</span>
+                    <span>Community Updates: Active</span>
                   </div>
                   <div className="flex items-center gap-2 text-[#94A3B8]">
                     <Shield className="w-3.5 h-3.5 text-amber-400" />

@@ -50,3 +50,4 @@ jobs:
           SITE_URL: ${{ secrets.SITE_URL }}
         run: |
           python automation/run_pipeline.py --count ${{ inputs.question_count || 2 }} ${{ inputs.force_fallback && '--force-fallback' || '' }}
+

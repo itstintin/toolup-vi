@@ -2,18 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Terminal, Cpu, ExternalLink, LayoutGrid, BookOpen } from "lucide-react";
+import { Terminal, LayoutGrid, BookOpen } from "lucide-react";
 
 export function Navigation() {
   const pathname = usePathname();
 
   const tickerItems = [
-    "🔥 BREAKING: Port Gellhorn Cargo Ship Naval Bypass Live (+540% Velocity)",
-    "⚡ Bravado Banshee Confirmed #1 Top Speed in Patch 1.02 (186.2 mph)",
-    "📍 Grotti Cheetah Classic Keycard Spawn Verified on Starfish Island",
-    "💼 Grassrivers Contraband Airboat Loop Yield Benchmarked at $240K/hr",
-    "🛡️ Kelly County Air Defense Radar Blind Window Decreased to 240s",
-    "🎯 Heavy Sniper Mk II Thermal Sight Coordinates Confirmed in Leonida Keys",
+    "🏧 Cash Protection: Deposit money at ATMs under Jason or Lucia's separate accounts to avoid death forfeiture",
+    "🚗 Vehicle Garages: Pay N' Spray (Base Game) / Rideout Customs & One-Eyed Willie's Mod Shop (Ultimate Edition Exclusive)",
+    "🔫 Weapon Limits: Car trunk armory stashes long rifles; player carry limited to 2 concealed sidearms",
+    "⭐ Heat Reduction: 5-Rank Criminal Profile (Professional to Hardened & Irredeemable) requires multi-county heat cooling",
+    "📱 Leonida Network: WAINK, Scooter Bros, BuckMe (peer transfers), and RydeMe (rideshare & vehicle hailing) active on smartphone OS",
+    "🗺️ 6 Regions Mapped: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga (PTT Youngin$ Ultimate Edition)",
   ];
 
   // View Switcher logic (App View vs Wiki View)
@@ -49,7 +49,7 @@ export function Navigation() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00F0FF]"></span>
             </span>
             <span className="font-mono font-semibold text-[#00F0FF] uppercase tracking-wider text-[10px]">
-              GEO Telemetry Live
+              Leonida Live Dispatch
             </span>
           </div>
 
@@ -78,11 +78,11 @@ export function Navigation() {
                 ToolUp<span className="text-[#FF2E93]"> VI</span>
               </span>
               <span className="px-1.5 py-0.5 text-[9px] font-mono font-bold tracking-widest uppercase bg-[#00F0FF]/10 text-[#00F0FF] border border-[#00F0FF]/30 rounded">
-                v1.02 Live
+                Launch Build
               </span>
             </div>
             <span className="hidden sm:inline-block text-[10px] text-[#64748B] font-mono -mt-0.5">
-              Automated GTA VI Generative Engine Directory
+              Unofficial Leonida Tactical Database
             </span>
           </div>
         </Link>
@@ -119,34 +119,11 @@ export function Navigation() {
           </Link>
         </nav>
 
-        {/* Center / Right Links */}
-        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
-          <Link
-            href="/llms.txt"
-            target="_blank"
-            className="hidden md:flex items-center gap-1.5 text-xs font-mono text-[#94A3B8] hover:text-[#00F0FF] px-2.5 py-1.5 rounded border border-[#1F2430] bg-[#12141D] hover:border-[#00F0FF]/40 transition-colors"
-          >
-            <Cpu className="w-3.5 h-3.5 text-[#00F0FF]" />
-            <span>/llms.txt</span>
-          </Link>
-
-          <Link
-            href="/api/v1/openapi.json"
-            target="_blank"
-            className="hidden sm:flex items-center gap-1.5 text-xs font-mono text-[#94A3B8] hover:text-[#FF2E93] px-2.5 py-1.5 rounded border border-[#1F2430] bg-[#12141D] hover:border-[#FF2E93]/40 transition-colors"
-          >
-            <span>OpenAPI 3.1</span>
-            <ExternalLink className="w-3 h-3 text-[#FF2E93]" />
-          </Link>
-
-          <div className="hidden lg:flex items-center gap-2 pl-2 border-l border-[#1F2430]">
-            <div className="flex flex-col items-end text-right">
-              <div className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                <span className="text-[11px] font-mono font-medium text-[#F3F4F6]">RAG Active</span>
-              </div>
-              <span className="text-[9px] font-mono text-[#64748B]">Patch: 1.02 Verified</span>
-            </div>
+        {/* Right Status Pill */}
+        <div className="flex items-center gap-2 pl-3 border-l border-[#1F2430]">
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#12141D] border border-[#1F2430] shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span className="text-[11px] font-mono font-medium text-[#F3F4F6]">Live Guide Index</span>
           </div>
         </div>
       </div>

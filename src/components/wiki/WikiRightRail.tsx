@@ -169,7 +169,7 @@ export function WikiRightRail({ question, customTocItems }: WikiRightRailProps) 
             G-Portal: Dedicated Leonida RP & Heist Servers
           </h4>
           <p className="text-[#94A3B8] font-sans text-xs leading-relaxed">
-            Ultra-low latency Miami nodes, automated DDOS protection, and instant day-one Patch 1.02 modding support.
+            Ultra-low latency Miami nodes, automated DDOS protection, and instant Launch Build server hosting.
           </p>
         </div>
 

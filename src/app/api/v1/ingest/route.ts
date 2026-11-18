@@ -11,11 +11,11 @@ const IngestSchema = z.object({
     .min(3)
     .regex(/^[a-z0-9-]+$/, "Slug must only contain lowercase alphanumeric characters and hyphens"),
   category: z.enum([
-    "Missions",
-    "Money Guides",
-    "Vehicles",
-    "Weapons",
-    "Map Secrets",
+    "Money & ATMs",
+    "Map & Regions",
+    "Vehicles & Fences",
+    "Weapons & Loadouts",
+    "Criminal Profile & Heat",
     "Glitches & Fixes",
   ]),
   tldr_answer: z.string().min(20, "TL;DR answer must be at least 20 characters"),

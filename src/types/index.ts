@@ -1,10 +1,10 @@
 export type Category =
   | "All"
-  | "Missions"
-  | "Money Guides"
-  | "Vehicles"
-  | "Weapons"
-  | "Map Secrets"
+  | "Money & ATMs"
+  | "Map & Regions"
+  | "Vehicles & Fences"
+  | "Weapons & Loadouts"
+  | "Criminal Profile & Heat"
   | "Glitches & Fixes";
 
 export type WikiRegion =
@@ -63,4 +63,3 @@ export interface IngestPayload {
   search_volume_score?: number;
   last_patch_verified?: string;
 }
-

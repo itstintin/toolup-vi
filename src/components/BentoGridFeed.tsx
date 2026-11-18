@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Flame, ShieldCheck, Cpu, ArrowUpRight, Clock, Eye } from "lucide-react";
+import { Flame, ShieldCheck, Bookmark, ArrowUpRight, Clock, Eye } from "lucide-react";
 import { QuestionRecord } from "@/types";
 import { formatNumber } from "@/lib/utils";
 
@@ -21,14 +21,14 @@ export function BentoGridFeed({ questions }: BentoGridFeedProps) {
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-[#94A3B8]">
-            High-velocity player queries with live patch verifications and verified LLM answer blocks.
+            High-velocity player queries with live game verifications and instant tactical guides.
           </p>
         </div>
 
         <div className="flex items-center gap-3 text-xs font-mono text-[#64748B]">
           <span className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-[#12141D] border border-[#1F2430]">
             <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-            <span>All Benchmarks Patch 1.02</span>
+            <span>Launch Build · Nov 2026</span>
           </span>
         </div>
       </div>
@@ -77,8 +77,8 @@ export function BentoGridFeed({ questions }: BentoGridFeedProps) {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <span className="flex items-center gap-1" title="LLM Citations">
-                    <Cpu className="w-3 h-3 text-[#00F0FF]" />
+                  <span className="flex items-center gap-1" title="Community Saves">
+                    <Bookmark className="w-3 h-3 text-[#00F0FF]" />
                     <span>{formatNumber(q.llmCitationCount)}</span>
                   </span>
                   <span className="flex items-center gap-1" title="Total Views">

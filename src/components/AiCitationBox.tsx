@@ -37,7 +37,7 @@ export function AiCitationBox({ question }: AiCitationBoxProps) {
               TL;DR Instant Answer
             </span>
             <span className="hidden sm:inline-block text-[11px] font-mono text-[#64748B] ml-2">
-              (Direct LLM Citation Block)
+              (Executive Intel Summary)
             </span>
           </div>
         </div>
@@ -50,7 +50,7 @@ export function AiCitationBox({ question }: AiCitationBoxProps) {
                 ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/40"
                 : "bg-[#090A0F] text-[#F3F4F6] border border-[#1F2430] hover:border-[#00F0FF]/50"
             }`}
-            title="Copy answer verbatim for citation"
+            title="Copy answer summary"
           >
             {copied ? (
               <>
