@@ -1,3 +1,13 @@
+import { createClient } from "@libsql/client/web";
+
+const url = process.env.LIBSQL_DATABASE_URL || "libsql://toolup-vi-itstintin.aws-ap-south-1.turso.io";
+const authToken = process.env.LIBSQL_AUTH_TOKEN || "";
+
+export const db = createClient({
+  url,
+  authToken,
+});
+
 import fs from "fs";
 import path from "path";
 import { QuestionRecord, Category, IngestPayload, StepItem, SpecRow } from "@/types";
@@ -457,44 +467,34 @@ const SLUG_ALIASES: Record<string, string> = {
 };
 
 export function ensureDataFile(): void {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-  }
-  // Check if existing file contains outdated data or older taxonomy
-  if (!fs.existsSync(DB_FILE)) {
-    fs.writeFileSync(DB_FILE, JSON.stringify(SEED_QUESTIONS, null, 2), "utf-8");
-  } else {
-    try {
-      const raw = fs.readFileSync(DB_FILE, "utf-8");
-      if (
-        raw.includes("Patch 1.02") ||
-        raw.includes("Missions") ||
-        raw.includes("Money Guides") ||
-        raw.includes("Map Secrets") ||
-        raw.includes("Ambrosia") ||
-        raw.includes("Pawn & Gun") ||
-        raw.includes("Phil's Ammu-Nation") ||
-        raw.includes("1955 Vapid Stanier") ||
-        raw.includes("Port Gellhorn")
-      ) {
+  try {
+    if (typeof fs?.existsSync === "function" && !fs.existsSync(DATA_DIR)) {
+      if (typeof fs?.mkdirSync === "function") {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+    }
+    if (typeof fs?.existsSync === "function" && !fs.existsSync(DB_FILE)) {
+      if (typeof fs?.writeFileSync === "function") {
         fs.writeFileSync(DB_FILE, JSON.stringify(SEED_QUESTIONS, null, 2), "utf-8");
       }
-    } catch {
-      fs.writeFileSync(DB_FILE, JSON.stringify(SEED_QUESTIONS, null, 2), "utf-8");
     }
+  } catch {
+    // Cloudflare Workers edge environment: local fs is read-only or unsupported
   }
 }
 
 export function getAllQuestions(): QuestionRecord[] {
-  ensureDataFile();
   try {
-    const raw = fs.readFileSync(DB_FILE, "utf-8");
-    const parsed = JSON.parse(raw) as QuestionRecord[];
-    return parsed.sort((a, b) => b.searchVolumeScore - a.searchVolumeScore);
-  } catch (error) {
-    console.error("Failed to read questions from db:", error);
-    return SEED_QUESTIONS;
+    ensureDataFile();
+    if (typeof fs?.readFileSync === "function") {
+      const raw = fs.readFileSync(DB_FILE, "utf-8");
+      const parsed = JSON.parse(raw) as QuestionRecord[];
+      return parsed.sort((a, b) => b.searchVolumeScore - a.searchVolumeScore);
+    }
+  } catch {
+    // Edge runtime fallback
   }
+  return SEED_QUESTIONS;
 }
 
 export function getQuestionBySlug(slug: string): QuestionRecord | null {
