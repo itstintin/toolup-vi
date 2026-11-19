@@ -94,7 +94,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
     "title": "How to Strip GPS Trackers at a Fence and Register Stolen Cars?",
     "category": "Vehicles & Fences",
     "region": "Port Gellhorn",
-    "tldrAnswer": "Drive stolen high-end vehicles to an underground chop shop fence in Port Gellhorn or One-Eyed Willie's Mod Shop [Ultimate Edition Exclusive] to disable factory GPS tracking units. Once stripped, bring the clean chassis to Pay N' Spray (Base Game Standard) or Rideout Customs [Ultimate Edition Exclusive] to swap VIN plates and register full personal vehicle ownership.",
+    "tldrAnswer": "Drive stolen high-end vehicles to an underground chop shop fence in Port Gellhorn or One-Eyed Willie's Mod Shop (Ultimate Edition) to disable factory GPS tracking units. Once stripped, bring the clean chassis to Pay N' Spray (Base Game Standard) or Rideout Customs (Ultimate Edition) to swap VIN plates and register full personal vehicle ownership.",
     "steps": [
       {
         "stepNumber": 1,
@@ -106,7 +106,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       {
         "stepNumber": 2,
         "title": "Deliver to an Underground Vehicle Fence",
-        "instruction": "Navigate to an authorized fence located at the Port Gellhorn industrial docks or One-Eyed Willie's Mod Shop [Ultimate Edition Exclusive] to cut OEM tracker wires."
+        "instruction": "Navigate to an authorized fence located at the Port Gellhorn industrial docks or One-Eyed Willie's Mod Shop (Ultimate Edition) to cut OEM tracker wires."
       },
       {
         "stepNumber": 3,
@@ -372,7 +372,7 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
     "title": "All 6 Confirmed Regions of Leonida & Essential Shops in GTA VI",
     "category": "Map & Regions",
     "region": "Vice City",
-    "tldrAnswer": "Leonida encompasses 6 core geographic territories: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park. Essential supply chains include Phil's Ammu-Nation, Pay N' Spray, and Pawn & Gun in the base game, plus Rideout Customs, One-Eyed Willie's Mod Shop, and PTT Youngin$ as Ultimate Edition Exclusives.",
+    "tldrAnswer": "Leonida encompasses 6 core geographic territories: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park. Essential supply chains include Phil's Ammu-Nation, Pay N' Spray, and Pawn & Gun in the base game, plus Rideout Customs, One-Eyed Willie's Mod Shop, and PTT Youngin$ (Ultimate Edition).",
     "steps": [
       {
         "stepNumber": 1,
@@ -575,7 +575,13 @@ export function upsertQuestion(payload: IngestPayload): { record: QuestionRecord
       updatedAt: now,
     };
     all[existingIndex] = updated;
-    fs.writeFileSync(DB_FILE, JSON.stringify(all, null, 2), "utf-8");
+    try {
+      if (typeof fs?.writeFileSync === "function") {
+        fs.writeFileSync(DB_FILE, JSON.stringify(all, null, 2), "utf-8");
+      }
+    } catch {
+      // Cloudflare Workers edge environment: read-only filesystem
+    }
     return { record: updated, action: "updated" };
   } else {
     const created: QuestionRecord = {
@@ -600,7 +606,13 @@ export function upsertQuestion(payload: IngestPayload): { record: QuestionRecord
       isBreakout: true,
     };
     all.push(created);
-    fs.writeFileSync(DB_FILE, JSON.stringify(all, null, 2), "utf-8");
+    try {
+      if (typeof fs?.writeFileSync === "function") {
+        fs.writeFileSync(DB_FILE, JSON.stringify(all, null, 2), "utf-8");
+      }
+    } catch {
+      // Cloudflare Workers edge environment: read-only filesystem
+    }
     return { record: created, action: "created" };
   }
 }

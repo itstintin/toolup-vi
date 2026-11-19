@@ -1,13 +1,15 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "main": ".open-next/worker.js",
   "name": "toolup-vi",
-  "vars": {
-  "LIBSQL_DATABASE_URL": "libsql://toolup-vi-itstintin.aws-ap-south-1.turso.io",
-  "LIBSQL_AUTH_TOKEN": ""
-},
+  "main": ".open-next/worker.js",
   "compatibility_date": "2025-04-01",
   "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "preview_urls": true,
+  "vars": {
+    "LIBSQL_DATABASE_URL": "libsql://toolup-vi-itstintin.aws-ap-south-1.turso.io",
+    "LIBSQL_AUTH_TOKEN": ""
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"

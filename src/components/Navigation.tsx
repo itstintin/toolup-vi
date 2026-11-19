@@ -10,7 +10,7 @@ export function Navigation() {
   const tickerItems = [
     "🏧 Cash Protection: Deposit money at ATMs under Jason or Lucia's separate accounts to avoid death forfeiture",
     "🚗 Vehicle Garages: Pay N' Spray (Base Game) / Rideout Customs & One-Eyed Willie's Mod Shop (Ultimate Edition)",
-    "🔫 Weapon Limits: Car trunk armory stashes long rifles; player carry limited to 2 concealed sidearms",
+    "🔫 Weapon Limits: Carry limited to 2 concealed handguns + 2 slung long guns; surplus ordnance stashed in car trunk armory",
     "⭐ Heat Reduction: 5-Rank Criminal Profile (Professional, Hardened, Violent, Psycho, Irredeemable) requires multi-county heat cooling",
     "📱 Leonida Network: WAINK, Scooter Bros, BuckMe (peer transfers), and RydeMe (rideshare & vehicle hailing) active on smartphone OS",
     "🗺️ 6 Regions Mapped: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga National Park (PTT Youngin$ Ultimate Edition)",
@@ -55,7 +55,7 @@ export function Navigation() {
 
           <div className="overflow-hidden relative w-full flex-1">
             <div className="inline-flex space-x-8 animate-marquee whitespace-nowrap">
-              {tickerItems.concat(tickerItems).map((item, idx) => (
+              {tickerItems.map((item, idx) => (
                 <span key={idx} className="font-mono text-[11px] text-[#CBD5E1]">
                   {item}
                 </span>

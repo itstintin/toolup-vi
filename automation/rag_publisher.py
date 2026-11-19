@@ -113,10 +113,10 @@ PROTAGONISTS & BANKING:
 VEHICLE & WEAPON SYSTEMS:
 - Car Trunk Armory: Players can physically carry only 2 concealed handguns and 2 slung long weapons. All additional ordnance must be stored in personal car trunks.
 - GPS Transponder Stripping: Stolen high-end cars beacon LoJack pings within 90s. Must be stripped at chop-shop fences before VIN re-plating at Pay N' Spray (Base Game).
-- Retail Exclusivity: Rideout Customs, One-Eyed Willie's Mod Shop, and PTT Youngin$ must be tagged as [Ultimate Edition Exclusive]. Base retailers are Phil's Ammu-Nation, Pay N' Spray, and Pawn & Gun.
+- Retail Exclusivity: Rideout Customs, One-Eyed Willie's Mod Shop, and PTT Youngin$ must be tagged as (Ultimate Edition). Base retailers are Phil's Ammu-Nation, Pay N' Spray, and Pawn & Gun.
 
 CRIMINAL PROFILE & HEAT:
-- 5 Notoriety Ranks: Professional (1), Notorious (2), Hardened (3), Menace (4), and Irredeemable (5).
+- 5 Notoriety Ranks: Professional (1), Hardened (2), Violent (3), Psycho (4), and Irredeemable (5).
 - Multi-jurisdiction law enforcement (Vice City Metro Police vs Kelly County Sheriff). Heat cools 3x faster in rural safehouses.
 
 SMARTPHONE APPS:

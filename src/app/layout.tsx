@@ -5,9 +5,9 @@ import Link from "next/link";
 import { Cpu, Terminal, Compass, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "ToolUp VI | Automated GTA VI Q&A & Generative Engine Directory",
+  title: "ToolUp VI | Unofficial Leonida Tactical Database & Guides",
   description:
-    "Authoritative, high-contrast, zero-fluff GTA VI gameplay telemetry, mission guides, item coordinates, and verified mechanics across Vice Beaches, Port Gellhorn, and Leonida built for gamers and AI search engines (Perplexity, ChatGPT, Claude).",
+    "Authoritative, high-contrast, zero-fluff GTA VI gameplay telemetry, mission guides, item coordinates, and verified mechanics across Vice Beaches, Port Gellhorn, and Leonida built for PS5 & Xbox Series X|S players seeking instant answers with zero filler.",
   keywords: [
     "ToolUp VI",
     "GTA VI",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "ToolUp VI Research Lab" }],
   openGraph: {
-    title: "ToolUp VI | GTA VI Nervous System",
-    description: "Verified GTA VI Q&A telemetry across Leonida engineered for direct LLM citation and instant human answers.",
+    title: "ToolUp VI | Unofficial Leonida Tactical Database",
+    description: "Verified GTA VI tactical guides and telemetry across Leonida engineered for instant human answers.",
     type: "website",
     locale: "en_US",
   },
@@ -49,10 +49,10 @@ export default function RootLayout({
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
                   <Terminal className="w-4 h-4 text-[#00F0FF]" />
-                  <span className="font-bold text-sm text-[#F3F4F6]">TOOLUP VI NERVOUS SYSTEM</span>
+                  <span className="font-bold text-sm text-[#F3F4F6]">ToolUp VI</span>
                 </div>
                 <p className="text-[#94A3B8] font-sans leading-relaxed">
-                  Automated Generative Engine Optimization directory for Grand Theft Auto VI. Zero fluff, instant citations, continuous live telemetry across Leonida.
+                  Unofficial Leonida Tactical Database for Grand Theft Auto VI. Instant answers, zero filler, verified mission steps and coordinates across Leonida.
                 </p>
                 <div className="pt-2">
                   <Link
@@ -67,7 +67,7 @@ export default function RootLayout({
 
               <div>
                 <h4 className="font-bold text-[#F3F4F6] mb-2 uppercase text-[11px] tracking-wider">
-                  AI Crawlers & Telemetry
+                  APIs & Data Index
                 </h4>
                 <ul className="space-y-1.5">
                   <li>

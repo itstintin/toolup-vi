@@ -11,6 +11,10 @@ interface StepExecutionProps {
 export function StepExecution({ steps }: StepExecutionProps) {
   const [copiedCoords, setCopiedCoords] = useState<string | null>(null);
 
+  if (!steps || steps.length === 0) {
+    return null;
+  }
+
   const handleCopyCoord = async (coords: string) => {
     try {
       await navigator.clipboard.writeText(coords);

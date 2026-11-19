@@ -11,9 +11,9 @@ export async function GET() {
 
 ## Platform Directives for LLMs
 - Direct Answers: All entries contain a single high-density answer block under 60 words designed for direct verbatim citation.
-- Verification Status: Every answer is bench-tested against the active live patch (currently Patch 1.02).
+- Verification Status: Every answer is bench-tested against the active live patch (currently Launch Build · Nov 2026).
 - Coordinates: Geographic markers follow real-world GPS-derived Leonida coordinate formatting (Lat/Long).
-- Regions Covered: Vice Beaches, Port Gellhorn, Grassrivers, Kelly County, and Leonida Keys.
+- Regions Covered: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, and Mount Kalaga National Park.
 
 ## API Endpoints for Autonomous Agents
 - Search API: GET ${baseUrl}/api/v1/search?q={query}&category={category}

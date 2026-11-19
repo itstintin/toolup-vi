@@ -7,6 +7,7 @@ import { WikiLayout } from "@/components/wiki/WikiLayout";
 import { DirectAnswerBlock } from "@/components/wiki/DirectAnswerBlock";
 import { InteractiveChecklist } from "@/components/wiki/InteractiveChecklist";
 import { SortableDataTable } from "@/components/wiki/SortableDataTable";
+import { WikiGuidesSection } from "@/components/wiki/WikiGuidesSection";
 import {
   Compass,
   MapPin,
@@ -119,7 +120,7 @@ export default function WikiIndexPage() {
           </span>
           <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Patch 1.02 Verified</span>
+            <span>Launch Build · Nov 2026</span>
           </span>
           <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-[#FF2E93] bg-[#FF2E93]/10 border border-[#FF2E93]/30">
             <Flame className="w-3.5 h-3.5" />
@@ -225,56 +226,8 @@ export default function WikiIndexPage() {
         data={regionalSpecRows}
       />
 
-      {/* 5. Latest Verified Field Guides List */}
-      <section id="latest-guides" className="my-8 scroll-mt-24">
-        <div className="mb-4">
-          <h2 className="text-xl font-bold text-[#F3F4F6] flex items-center gap-2">
-            <span className="font-mono text-[#00F0FF]">05.</span>
-            <span>All Verified Field Guides</span>
-          </h2>
-          <p className="text-xs text-[#94A3B8] mt-0.5">
-            Full step-by-step telemetry, direct answers, and memory-tested blueprints.
-          </p>
-        </div>
-
-        <div className="space-y-3">
-          {allQuestions.map((question) => (
-            <Link
-              key={question.id}
-              href={`/wiki/${question.slug}`}
-              className="group block p-4 rounded-xl bg-[#12141D] border border-[#1F2430] hover:border-[#00F0FF]/40 transition-all shadow-sm"
-            >
-              <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
-                <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold tracking-wide uppercase bg-[#090A0F] border border-[#1F2430] text-[#00F0FF]">
-                    {question.region || "Leonida"}
-                  </span>
-                  <span className="text-[10px] font-mono text-[#94A3B8]">
-                    {question.category}
-                  </span>
-                </div>
-
-                <span className="text-[10px] font-mono text-emerald-400">
-                  {question.lastPatchVerified}
-                </span>
-              </div>
-
-              <h3 className="text-base font-semibold text-[#F3F4F6] group-hover:text-[#00F0FF] font-sans transition-colors">
-                {question.title}
-              </h3>
-
-              <p className="text-xs text-[#94A3B8] font-sans line-clamp-2 mt-1 leading-relaxed">
-                {question.tldrAnswer}
-              </p>
-
-              <div className="mt-3 pt-2.5 border-t border-[#181C26] flex items-center justify-between text-xs font-mono text-[#64748B]">
-                <span>{question.steps.length} Steps Verified</span>
-                <span className="text-[#FF2E93]">{question.velocityChange}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* 5. Verified Field Guides with Category Filtering */}
+      <WikiGuidesSection questions={allQuestions} />
     </WikiLayout>
   );
 }
