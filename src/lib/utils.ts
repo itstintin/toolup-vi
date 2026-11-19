@@ -28,3 +28,11 @@ export function formatDate(dateString: string): string {
   }
 }
 
+export function calculateReadTime(text: string): string {
+  if (!text) return "2 min read";
+  const words = text.trim().split(/\s+/).filter(Boolean).length;
+  // Estimate ~180 words per minute + 30s base comprehension for tactical blueprints
+  const minutes = Math.max(1, Math.ceil(words / 150));
+  return `${minutes} min read`;
+}
+

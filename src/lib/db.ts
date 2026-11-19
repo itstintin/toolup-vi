@@ -11,6 +11,7 @@ export const db = createClient({
 import fs from "fs";
 import path from "path";
 import { QuestionRecord, Category, IngestPayload, StepItem, SpecRow } from "@/types";
+import { calculateReadTime } from "@/lib/utils";
 
 const DATA_DIR = path.join(process.cwd(), "data");
 const DB_FILE = path.join(DATA_DIR, "questions.json");
@@ -76,17 +77,13 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       "https://rockstargames.com/vi/gameplay-overview",
       "https://toolup-vi.com/intel/atm-banking-mechanics"
     ],
-    "searchVolumeScore": 98,
-    "velocityChange": "+740% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "2 min read",
     "verifiedBy": "Economy & Banking Group",
     "author": "Lead Economy Researcher",
     "createdAt": "2026-11-15T12:00:00Z",
-    "updatedAt": "2026-11-18T10:00:00Z",
-    "viewsCount": 284000,
-    
-    "llmCitationCount": 4210,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T10:00:00Z"
   },
   {
     "id": "gta6-q-002",
@@ -147,16 +144,13 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       "https://rockstargames.com/newswire/gtavi-tuning-guide",
       "https://toolup-vi.com/intel/vehicle-fences"
     ],
-    "searchVolumeScore": 96,
-    "velocityChange": "+490% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "3 min read",
     "verifiedBy": "Vehicle Telemetry Group",
     "author": "Staff Wheelman",
     "createdAt": "2026-11-15T14:30:00Z",
-    "updatedAt": "2026-11-18T11:15:00Z",
-    "viewsCount": 142000,
-    "llmCitationCount": 3890,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T11:15:00Z"
   },
   {
     "id": "gta6-q-003",
@@ -216,16 +210,13 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       "https://rockstargames.com/newswire/gtavi-weapons-overview",
       "https://toolup-vi.com/intel/car-trunk-armory"
     ],
-    "searchVolumeScore": 99,
-    "velocityChange": "+820% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "2 min read",
     "verifiedBy": "Combat Tactics Group",
     "author": "Tactical Armorer",
     "createdAt": "2026-11-15T08:00:00Z",
-    "updatedAt": "2026-11-18T09:40:00Z",
-    "viewsCount": 312000,
-    "llmCitationCount": 8940,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T09:40:00Z"
   },
   {
     "id": "gta6-q-004",
@@ -285,16 +276,13 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       "https://leonida-justice.gov/criminal-profiling",
       "https://toolup-vi.com/intel/heat-mechanics"
     ],
-    "searchVolumeScore": 94,
-    "velocityChange": "+390% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "3 min read",
     "verifiedBy": "Jurisdiction & Heat Research",
     "author": "Tactical Operative",
     "createdAt": "2026-11-14T11:00:00Z",
-    "updatedAt": "2026-11-18T10:30:00Z",
-    "viewsCount": 185000,
-    "llmCitationCount": 4120,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T10:30:00Z"
   },
   {
     "id": "gta6-q-005",
@@ -355,16 +343,13 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       "https://waink-social.leonida/feed",
       "https://toolup-vi.com/intel/smartphone-apps"
     ],
-    "searchVolumeScore": 92,
-    "velocityChange": "+290% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "2 min read",
     "verifiedBy": "App Ecosystem Group",
     "author": "Staff Technologist",
     "createdAt": "2026-11-14T09:15:00Z",
-    "updatedAt": "2026-11-18T08:50:00Z",
-    "viewsCount": 88700,
-    "llmCitationCount": 1950,
-    "isBreakout": false
+    "updatedAt": "2026-11-18T08:50:00Z"
   },
   {
     "id": "gta6-q-006",
@@ -439,16 +424,13 @@ export const SEED_QUESTIONS: QuestionRecord[] = [
       "https://rockstargames.com/vi/leonida-atlas",
       "https://toolup-vi.com/intel/leonida-regions"
     ],
-    "searchVolumeScore": 97,
-    "velocityChange": "+610% last 24h",
-    "lastPatchVerified": "Launch Build \u00b7 Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "3 min read",
     "verifiedBy": "Cartography & Commerce Group",
     "author": "Lead Cartographer",
     "createdAt": "2026-11-15T16:00:00Z",
-    "updatedAt": "2026-11-18T11:45:00Z",
-    "viewsCount": 245000,
-    "llmCitationCount": 6810,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T11:45:00Z"
   }
 ];
 
@@ -489,7 +471,7 @@ export function getAllQuestions(): QuestionRecord[] {
     if (typeof fs?.readFileSync === "function") {
       const raw = fs.readFileSync(DB_FILE, "utf-8");
       const parsed = JSON.parse(raw) as QuestionRecord[];
-      return parsed.sort((a, b) => b.searchVolumeScore - a.searchVolumeScore);
+      return parsed.sort((a, b) => (b.searchVolumeScore ?? 0) - (a.searchVolumeScore ?? 0));
     }
   } catch {
     // Edge runtime fallback
@@ -507,6 +489,156 @@ export function getQuestionBySlug(slug: string): QuestionRecord | null {
     return all.find((q) => q.slug.toLowerCase() === aliasedSlug.toLowerCase()) || null;
   }
   return null;
+}
+
+export function getRelatedGuides(currentSlug: string, count = 3): QuestionRecord[] {
+  const all = getAllQuestions();
+  const current = getQuestionBySlug(currentSlug);
+  if (!current) {
+    return all.slice(0, count);
+  }
+
+  // Prioritize same category or region, strictly excluding current
+  const related = all.filter(
+    (q) =>
+      q.slug.toLowerCase() !== current.slug.toLowerCase() &&
+      (q.category === current.category || (current.region && q.region === current.region))
+  );
+
+  // Pad with other guides if needed
+  if (related.length < count) {
+    const remaining = all.filter(
+      (q) =>
+        q.slug.toLowerCase() !== current.slug.toLowerCase() &&
+        !related.some((r) => r.slug.toLowerCase() === q.slug.toLowerCase())
+    );
+    related.push(...remaining);
+  }
+
+  return related.slice(0, count);
+}
+
+function mapDbRowsToQuestions(rows: Record<string, unknown>[]): QuestionRecord[] {
+  return rows.map((r: Record<string, unknown>) => {
+    let steps: StepItem[] = [];
+    if (Array.isArray(r.steps_json)) {
+      steps = r.steps_json as StepItem[];
+    } else if (typeof r.steps_json === "string") {
+      try {
+        steps = JSON.parse(r.steps_json);
+      } catch {
+        steps = [];
+      }
+    } else if (Array.isArray(r.steps)) {
+      steps = r.steps as StepItem[];
+    }
+
+    let specsTable: SpecRow[] = [];
+    if (Array.isArray(r.specs_table_json)) {
+      specsTable = r.specs_table_json as SpecRow[];
+    } else if (typeof r.specs_table_json === "string") {
+      try {
+        specsTable = JSON.parse(r.specs_table_json);
+      } catch {
+        specsTable = [];
+      }
+    } else if (Array.isArray(r.specsTable)) {
+      specsTable = r.specsTable as SpecRow[];
+    }
+
+    let sourceUrls: string[] = [];
+    if (Array.isArray(r.source_urls)) {
+      sourceUrls = r.source_urls as string[];
+    } else if (typeof r.source_urls === "string") {
+      try {
+        sourceUrls = JSON.parse(r.source_urls);
+      } catch {
+        sourceUrls = [];
+      }
+    } else if (Array.isArray(r.sourceUrls)) {
+      sourceUrls = r.sourceUrls as string[];
+    }
+
+    const tldr = String(r.tldr_answer || r.tldrAnswer || "");
+    const slugStr = String(r.slug || "");
+    const titleStr = String(r.title || "");
+
+    return {
+      id: String(r.id || `gta6-q-${slugStr}`),
+      slug: slugStr,
+      title: titleStr,
+      category: (r.category as Exclude<Category, "All">) || "Map & Regions",
+      region: (r.region as string) || "Vice City",
+      tldrAnswer: tldr,
+      steps,
+      specsTable,
+      sourceUrls,
+      lastPatchVerified: String(r.last_patch_verified || r.lastPatchVerified || "Launch Build 1.0"),
+      verifiedPatch: String(r.verified_patch || r.verifiedPatch || "Launch Build 1.0"),
+      readTime: String(r.read_time || r.readTime || calculateReadTime(tldr)),
+      verifiedBy: String(r.verified_by || r.verifiedBy || "ToolUp VI Tactical Lab"),
+      author: String(r.author || "Lead Editor"),
+      createdAt: String(r.created_at || r.createdAt || new Date().toISOString()),
+      updatedAt: String(r.updated_at || r.updatedAt || new Date().toISOString()),
+    };
+  });
+}
+
+export async function searchQuestionsFromDb(
+  query?: string,
+  category?: string,
+  limit = 20
+): Promise<QuestionRecord[]> {
+  const qTrim = query?.trim() || "";
+  const hasCategory = Boolean(category && category !== "All");
+
+  try {
+    // Parameterized search against Turso Database via @libsql/client/web
+    if (qTrim.length > 0 && hasCategory) {
+      const searchPattern = `%${qTrim}%`;
+      const res = await db.execute({
+        sql: `SELECT * FROM questions 
+              WHERE category = ? 
+              AND (title LIKE ? OR tldr_answer LIKE ? OR region LIKE ?) 
+              LIMIT ?`,
+        args: [category!, searchPattern, searchPattern, searchPattern, limit],
+      });
+      if (res.rows && res.rows.length > 0) {
+        return mapDbRowsToQuestions(res.rows as unknown as Record<string, unknown>[]);
+      }
+    } else if (qTrim.length > 0) {
+      const searchPattern = `%${qTrim}%`;
+      const res = await db.execute({
+        sql: `SELECT * FROM questions 
+              WHERE (title LIKE ? OR tldr_answer LIKE ? OR category LIKE ? OR region LIKE ?) 
+              LIMIT ?`,
+        args: [searchPattern, searchPattern, searchPattern, searchPattern, limit],
+      });
+      if (res.rows && res.rows.length > 0) {
+        return mapDbRowsToQuestions(res.rows as unknown as Record<string, unknown>[]);
+      }
+    } else if (hasCategory) {
+      const res = await db.execute({
+        sql: `SELECT * FROM questions WHERE category = ? LIMIT ?`,
+        args: [category!, limit],
+      });
+      if (res.rows && res.rows.length > 0) {
+        return mapDbRowsToQuestions(res.rows as unknown as Record<string, unknown>[]);
+      }
+    } else {
+      const res = await db.execute({
+        sql: `SELECT * FROM questions LIMIT ?`,
+        args: [limit],
+      });
+      if (res.rows && res.rows.length > 0) {
+        return mapDbRowsToQuestions(res.rows as unknown as Record<string, unknown>[]);
+      }
+    }
+  } catch {
+    // Graceful fallback to verified in-memory dataset when Turso is unreachable or offline
+  }
+
+  return searchQuestions(query, category).slice(0, limit);
 }
 
 export function searchQuestions(query?: string, category?: string): QuestionRecord[] {
@@ -571,7 +703,9 @@ export function upsertQuestion(payload: IngestPayload): { record: QuestionRecord
       specsTable: payload.specs_table_json || existing.specsTable,
       sourceUrls: payload.source_urls || existing.sourceUrls,
       searchVolumeScore: payload.search_volume_score ?? existing.searchVolumeScore,
-      lastPatchVerified: payload.last_patch_verified || existing.lastPatchVerified,
+      lastPatchVerified: payload.last_patch_verified || existing.lastPatchVerified || "Launch Build 1.0",
+      verifiedPatch: payload.verified_patch || existing.verifiedPatch || "Launch Build 1.0",
+      readTime: payload.read_time || existing.readTime || calculateReadTime(payload.tldr_answer || existing.tldrAnswer),
       updatedAt: now,
     };
     all[existingIndex] = updated;
@@ -594,15 +728,13 @@ export function upsertQuestion(payload: IngestPayload): { record: QuestionRecord
       steps: stepsFormatted,
       specsTable: payload.specs_table_json || [],
       sourceUrls: payload.source_urls || [],
-      searchVolumeScore: payload.search_volume_score ?? 80,
-      velocityChange: "+150% (New Guide)",
-      lastPatchVerified: payload.last_patch_verified || "Launch Build · Nov 2026",
+      lastPatchVerified: payload.last_patch_verified || "Launch Build 1.0",
+      verifiedPatch: payload.verified_patch || "Launch Build 1.0",
+      readTime: payload.read_time || calculateReadTime(payload.tldr_answer),
       verifiedBy: "Community Telemetry Guide",
       author: "Verified Contributor",
       createdAt: now,
       updatedAt: now,
-      viewsCount: 1,
-      llmCitationCount: 0,
       isBreakout: true,
     };
     all.push(created);

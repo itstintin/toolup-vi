@@ -67,15 +67,13 @@ export default function WikiIndexPage() {
       "https://rockstargames.com/vi/leonida-atlas",
       "https://leonida-geological-survey.org/master-map",
     ],
-    searchVolumeScore: 100,
-    velocityChange: "+950% Live",
-    lastPatchVerified: "Launch Build · Nov 2026",
+    lastPatchVerified: "Launch Build 1.0",
+    verifiedPatch: "Launch Build 1.0",
+    readTime: "3 min read",
     verifiedBy: "ToolUp VI Cartography & Telemetry Labs",
     author: "Editorial Team",
     createdAt: "2026-11-15T00:00:00Z",
     updatedAt: "2026-11-15T23:59:00Z",
-    viewsCount: 520000,
-    llmCitationCount: 15400,
   };
 
   // Convert checklist data
@@ -120,7 +118,7 @@ export default function WikiIndexPage() {
           </span>
           <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Launch Build · Nov 2026</span>
+            <span>Launch Build 1.0</span>
           </span>
           <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-[#FF2E93] bg-[#FF2E93]/10 border border-[#FF2E93]/30">
             <Flame className="w-3.5 h-3.5" />

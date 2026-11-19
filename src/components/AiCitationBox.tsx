@@ -34,10 +34,10 @@ export function AiCitationBox({ question }: AiCitationBoxProps) {
           </div>
           <div>
             <span className="text-xs font-mono font-bold tracking-wider uppercase text-[#00F0FF]">
-              TL;DR Instant Answer
+              Direct Answer
             </span>
             <span className="hidden sm:inline-block text-[11px] font-mono text-[#64748B] ml-2">
-              (Executive Intel Summary)
+              (Tactical Execution Summary)
             </span>
           </div>
         </div>
@@ -77,7 +77,7 @@ export function AiCitationBox({ question }: AiCitationBoxProps) {
         <div className="flex flex-wrap items-center gap-3">
           <div className="flex items-center gap-1 text-emerald-400">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Verified: {question.lastPatchVerified}</span>
+            <span>Verified: {question.verifiedPatch || question.lastPatchVerified || "Launch Build 1.0"}</span>
           </div>
           <span className="text-[#2A3142]">•</span>
           <div className="flex items-center gap-1 text-[#64748B]">

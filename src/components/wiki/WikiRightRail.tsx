@@ -12,8 +12,10 @@ import {
   Shield,
   Layers,
   MapPin,
+  Clock,
 } from "lucide-react";
 import { QuestionRecord } from "@/types";
+import { calculateReadTime } from "@/lib/utils";
 
 export interface TocItem {
   id: string;
@@ -140,11 +142,14 @@ export function WikiRightRail({ question, customTocItems }: WikiRightRailProps) 
             )}
             <div className="flex items-center justify-between pt-2">
               <span className="text-[#64748B]">Verified Patch</span>
-              <span className="text-emerald-400 font-semibold">{question.lastPatchVerified}</span>
+              <span className="text-emerald-400 font-semibold">{question.verifiedPatch || question.lastPatchVerified || "Launch Build 1.0"}</span>
             </div>
             <div className="flex items-center justify-between pt-2">
-              <span className="text-[#64748B]">Trending Velocity</span>
-              <span className="text-[#FF2E93] font-semibold">{question.velocityChange}</span>
+              <span className="text-[#64748B]">Estimated Read</span>
+              <span className="text-[#00F0FF] font-semibold flex items-center gap-1">
+                <Clock className="w-3 h-3" />
+                <span>{question.readTime || calculateReadTime(question.tldrAnswer)}</span>
+              </span>
             </div>
             <div className="flex items-center justify-between pt-2">
               <span className="text-[#64748B]">Verification Lab</span>

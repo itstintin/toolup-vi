@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
-import { getAllQuestions, getQuestionBySlug } from "@/lib/db";
+import { getAllQuestions, getQuestionBySlug, getRelatedGuides } from "@/lib/db";
 import {
   generateQaPageSchema,
   generateFaqPageSchema,
@@ -14,7 +14,10 @@ import { SidebarSponsorSlot, InContentSponsorBanner } from "@/components/NativeS
 import { TableOfContents } from "@/components/TableOfContents";
 import {
   ShieldCheck,
-  Flame,
+  MapPin,
+  Clock,
+  BookOpen,
+  ArrowRight,
   ArrowLeft,
   Calendar,
   User,
@@ -23,7 +26,7 @@ import {
   Database,
   Cpu,
 } from "lucide-react";
-import { formatDate } from "@/lib/utils";
+import { formatDate, calculateReadTime } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -83,6 +86,8 @@ export default async function QuestionPage({ params }: PageProps) {
     notFound();
   }
 
+  const relatedGuides = getRelatedGuides(question.slug, 3);
+
   // Schema.org JSON-LD Payloads
   const qaSchema = generateQaPageSchema(question);
   const faqSchema = generateFaqPageSchema(question);
@@ -126,13 +131,19 @@ export default async function QuestionPage({ params }: PageProps) {
               <span className="px-2.5 py-1 rounded text-xs font-mono font-bold tracking-wide uppercase bg-[#090A0F] border border-[#1F2430] text-[#00F0FF]">
                 {question.category}
               </span>
+              {question.region && (
+                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-[#CBD5E1] bg-[#12141D] border border-[#1F2430]">
+                  <MapPin className="w-3.5 h-3.5 text-[#00F0FF]" />
+                  <span>{question.region}</span>
+                </span>
+              )}
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30">
                 <ShieldCheck className="w-3.5 h-3.5" />
-                <span>{question.lastPatchVerified}</span>
+                <span>{question.verifiedPatch || question.lastPatchVerified || "Launch Build 1.0"}</span>
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-[#FF2E93] bg-[#FF2E93]/10 border border-[#FF2E93]/30">
-                <Flame className="w-3.5 h-3.5" />
-                <span>Velocity: {question.velocityChange}</span>
+                <Clock className="w-3.5 h-3.5" />
+                <span>{question.readTime || calculateReadTime(question.tldrAnswer)}</span>
               </span>
             </div>
 
@@ -195,6 +206,62 @@ export default async function QuestionPage({ params }: PageProps) {
                 ))}
               </ul>
             </section>
+
+            {/* Related Field Guides (3 Tactical Recommendations) */}
+            {relatedGuides.length > 0 && (
+              <section id="related-guides" className="my-10 pt-8 border-t border-[#1F2430]">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-[#00F0FF]" />
+                    <h3 className="text-lg font-bold text-[#F3F4F6] font-sans">
+                      Related Field Guides
+                    </h3>
+                  </div>
+                  <Link
+                    href="/wiki"
+                    className="text-xs font-mono text-[#00F0FF] hover:underline flex items-center gap-1"
+                  >
+                    <span>Browse All Guides</span>
+                    <ArrowRight className="w-3 h-3" />
+                  </Link>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {relatedGuides.map((rel) => (
+                    <Link
+                      key={rel.id}
+                      href={`/q/${rel.slug}`}
+                      className="group block p-4 rounded-xl bg-[#12141D] border border-[#1F2430] hover:border-[#00F0FF]/50 transition-all flex flex-col justify-between shadow-sm"
+                    >
+                      <div>
+                        <div className="flex items-center justify-between gap-1 mb-2">
+                          <span className="px-2 py-0.5 rounded text-[9px] font-mono font-bold uppercase bg-[#090A0F] border border-[#1F2430] text-[#00F0FF]">
+                            {rel.category}
+                          </span>
+                          <span className="text-[10px] font-mono text-[#64748B]">
+                            {calculateReadTime(rel.tldrAnswer)}
+                          </span>
+                        </div>
+                        <h4 className="text-sm font-semibold text-[#F3F4F6] group-hover:text-[#00F0FF] line-clamp-2 transition-colors mb-2">
+                          {rel.title}
+                        </h4>
+                        <p className="text-xs text-[#94A3B8] line-clamp-2 leading-relaxed">
+                          {rel.tldrAnswer}
+                        </p>
+                      </div>
+
+                      <div className="pt-3 mt-3 border-t border-[#181C26] flex items-center justify-between text-[11px] font-mono text-[#64748B]">
+                        <span>{rel.steps.length} Steps</span>
+                        <span className="text-[#00F0FF] group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
+                          <span>View</span>
+                          <ArrowRight className="w-3 h-3" />
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
           </article>
 
           {/* Sticky Right Sidebar (4 Columns) */}

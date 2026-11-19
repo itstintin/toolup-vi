@@ -15,7 +15,7 @@ import {
 } from "@/lib/schema-generator";
 import {
   ShieldCheck,
-  Flame,
+  Clock,
   ArrowLeft,
   Calendar,
   User,
@@ -26,7 +26,7 @@ import {
   Compass,
   AlertTriangle,
 } from "lucide-react";
-import { formatDate } from "@/lib/utils";
+import { formatDate, calculateReadTime } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -166,11 +166,11 @@ export default async function WikiArticlePage({ params }: PageProps) {
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>{question.lastPatchVerified}</span>
+              <span>{question.verifiedPatch || question.lastPatchVerified || "Launch Build 1.0"}</span>
             </span>
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-bold text-[#FF2E93] bg-[#FF2E93]/10 border border-[#FF2E93]/30">
-              <Flame className="w-3.5 h-3.5" />
-              <span>{question.velocityChange}</span>
+              <Clock className="w-3.5 h-3.5" />
+              <span>{question.readTime || calculateReadTime(question.tldrAnswer)}</span>
             </span>
           </div>
 

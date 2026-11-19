@@ -99,7 +99,8 @@ export async function POST(req: NextRequest) {
           id: record.id,
           title: record.title,
           category: record.category,
-          searchVolumeScore: record.searchVolumeScore,
+          region: record.region || "Vice City",
+          verifiedPatch: record.verifiedPatch || record.lastPatchVerified || "Launch Build 1.0",
         },
       },
       { status: action === "created" ? 201 : 200 }

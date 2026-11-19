@@ -114,7 +114,7 @@ export default function RootLayout({
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-emerald-400">
                     <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-                    <span>Game Build: Launch Build · Nov 2026</span>
+                    <span>Game Build: Launch Build 1.0</span>
                   </div>
                   <div className="flex items-center gap-2 text-[#00F0FF]">
                     <Cpu className="w-3.5 h-3.5" />
@@ -140,7 +140,7 @@ export default function RootLayout({
             <div className="pt-6 border-t border-[#181C26] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
               <div>© 2026 ToolUp VI. All gameplay telemetry verified.</div>
               <div className="flex items-center gap-4">
-                <span className="text-emerald-400">Latency: 14ms</span>
+                <span className="text-emerald-400">Build: Launch Build 1.0</span>
                 <span>•</span>
                 <span className="text-[#00F0FF]">Protocol: HTTP/3</span>
                 <span>•</span>

@@ -39,15 +39,17 @@ export interface QuestionRecord {
   steps: StepItem[];
   specsTable: SpecRow[];
   sourceUrls: string[];
-  searchVolumeScore: number;
-  velocityChange: string;
   lastPatchVerified: string;
+  verifiedPatch?: string;
+  readTime?: string;
   verifiedBy: string;
   author: string;
   createdAt: string;
   updatedAt: string;
-  viewsCount: number;
-  llmCitationCount: number;
+  searchVolumeScore?: number;
+  velocityChange?: string;
+  viewsCount?: number;
+  llmCitationCount?: number;
   isBreakout?: boolean;
 }
 
@@ -60,6 +62,8 @@ export interface IngestPayload {
   steps_markdown?: string | StepItem[];
   specs_table_json?: SpecRow[];
   source_urls?: string[];
-  search_volume_score?: number;
   last_patch_verified?: string;
+  verified_patch?: string;
+  read_time?: string;
+  search_volume_score?: number;
 }

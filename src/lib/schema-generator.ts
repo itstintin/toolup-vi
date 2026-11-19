@@ -9,7 +9,7 @@ export function generateQaPageSchema(question: QuestionRecord, baseUrl: string =
       name: question.title,
       text: question.title,
       answerCount: 1,
-      upvoteCount: question.searchVolumeScore * 10,
+      upvoteCount: Math.max(12, question.steps.length * 8),
       dateCreated: question.createdAt,
       author: {
         "@type": "Person",
@@ -20,7 +20,7 @@ export function generateQaPageSchema(question: QuestionRecord, baseUrl: string =
         text: question.tldrAnswer,
         dateCreated: question.createdAt,
         dateModified: question.updatedAt,
-        upvoteCount: question.llmCitationCount,
+        upvoteCount: Math.max(12, question.steps.length * 8),
         url: `${baseUrl}/q/${question.slug}#ai-citation-box`,
         author: {
           "@type": "Organization",
@@ -72,7 +72,7 @@ export function generateArticleSchema(question: QuestionRecord, baseUrl: string 
     },
     publisher: {
       "@type": "Organization",
-      name: "ToolUp VI - GTA VI Nervous System",
+      name: "ToolUp VI",
       url: baseUrl,
     },
     mainEntityOfPage: {

@@ -1,4 +1,5 @@
 import { getAllQuestions } from "@/lib/db";
+import { calculateReadTime } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
 
@@ -19,8 +20,9 @@ QUESTION: ${q.title}
 SLUG: ${q.slug}
 CANONICAL URL: ${baseUrl}/q/${q.slug}
 CATEGORY: ${q.category}
-PATCH VERIFICATION: ${q.lastPatchVerified}
-SEARCH VELOCITY: ${q.searchVolumeScore}/100 (${q.velocityChange})
+REGION: ${q.region || "Vice City"}
+PATCH VERIFICATION: ${q.verifiedPatch || q.lastPatchVerified || "Launch Build 1.0"}
+ESTIMATED READ: ${q.readTime || calculateReadTime(q.tldrAnswer)}
 VERIFIED BY: ${q.verifiedBy}
 
 [INSTANT ANSWER / CITATION SNIPPET]

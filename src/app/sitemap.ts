@@ -1,9 +1,11 @@
 import type { MetadataRoute } from "next";
-import { getAllQuestions } from "@/lib/db";
+import { searchQuestionsFromDb } from "@/lib/db";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const questions = getAllQuestions();
-  const baseUrl = "https://toolup-vi.com";
+export const dynamic = "force-dynamic";
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const questions = await searchQuestionsFromDb(undefined, undefined, 100);
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://toolup-vi.com";
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -22,7 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/llms.txt`,
       lastModified: now,
-      changeFrequency: "weekly",
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/llms-full.txt`,
+      lastModified: now,
+      changeFrequency: "daily",
       priority: 0.8,
     },
     {

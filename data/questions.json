@@ -59,16 +59,13 @@
       "https://rockstargames.com/vi/gameplay-overview",
       "https://toolup-vi.com/intel/atm-banking-mechanics"
     ],
-    "searchVolumeScore": 98,
-    "velocityChange": "+740% last 24h",
-    "lastPatchVerified": "Launch Build · Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "2 min read",
     "verifiedBy": "Economy & Banking Group",
     "author": "Lead Economy Researcher",
     "createdAt": "2026-11-15T12:00:00Z",
-    "updatedAt": "2026-11-18T10:00:00Z",
-    "viewsCount": 284000,
-    "llmCitationCount": 4210,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T10:00:00Z"
   },
   {
     "id": "gta6-q-002",
@@ -129,16 +126,13 @@
       "https://rockstargames.com/newswire/gtavi-tuning-guide",
       "https://toolup-vi.com/intel/vehicle-fences"
     ],
-    "searchVolumeScore": 96,
-    "velocityChange": "+490% last 24h",
-    "lastPatchVerified": "Launch Build · Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "3 min read",
     "verifiedBy": "Vehicle Telemetry Group",
     "author": "Staff Wheelman",
     "createdAt": "2026-11-15T14:30:00Z",
-    "updatedAt": "2026-11-18T11:15:00Z",
-    "viewsCount": 142000,
-    "llmCitationCount": 3890,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T11:15:00Z"
   },
   {
     "id": "gta6-q-003",
@@ -198,16 +192,13 @@
       "https://rockstargames.com/newswire/gtavi-weapons-overview",
       "https://toolup-vi.com/intel/car-trunk-armory"
     ],
-    "searchVolumeScore": 99,
-    "velocityChange": "+820% last 24h",
-    "lastPatchVerified": "Launch Build · Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "2 min read",
     "verifiedBy": "Combat Tactics Group",
     "author": "Tactical Armorer",
     "createdAt": "2026-11-15T08:00:00Z",
-    "updatedAt": "2026-11-18T09:40:00Z",
-    "viewsCount": 312000,
-    "llmCitationCount": 8940,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T09:40:00Z"
   },
   {
     "id": "gta6-q-004",
@@ -267,16 +258,13 @@
       "https://leonida-justice.gov/criminal-profiling",
       "https://toolup-vi.com/intel/heat-mechanics"
     ],
-    "searchVolumeScore": 94,
-    "velocityChange": "+390% last 24h",
-    "lastPatchVerified": "Launch Build · Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "3 min read",
     "verifiedBy": "Jurisdiction & Heat Research",
     "author": "Tactical Operative",
     "createdAt": "2026-11-14T11:00:00Z",
-    "updatedAt": "2026-11-18T10:30:00Z",
-    "viewsCount": 185000,
-    "llmCitationCount": 4120,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T10:30:00Z"
   },
   {
     "id": "gta6-q-005",
@@ -336,16 +324,13 @@
       "https://waink-social.leonida/feed",
       "https://toolup-vi.com/intel/smartphone-apps"
     ],
-    "searchVolumeScore": 92,
-    "velocityChange": "+290% last 24h",
-    "lastPatchVerified": "Launch Build · Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "2 min read",
     "verifiedBy": "App Ecosystem Group",
     "author": "Staff Technologist",
     "createdAt": "2026-11-14T09:15:00Z",
-    "updatedAt": "2026-11-18T08:50:00Z",
-    "viewsCount": 88700,
-    "llmCitationCount": 1950,
-    "isBreakout": false
+    "updatedAt": "2026-11-18T08:50:00Z"
   },
   {
     "id": "gta6-q-006",
@@ -420,15 +405,12 @@
       "https://rockstargames.com/vi/leonida-atlas",
       "https://toolup-vi.com/intel/leonida-regions"
     ],
-    "searchVolumeScore": 97,
-    "velocityChange": "+610% last 24h",
-    "lastPatchVerified": "Launch Build · Nov 2026",
+    "lastPatchVerified": "Launch Build 1.0",
+    "verifiedPatch": "Launch Build 1.0",
+    "readTime": "3 min read",
     "verifiedBy": "Cartography & Commerce Group",
     "author": "Lead Cartographer",
     "createdAt": "2026-11-15T16:00:00Z",
-    "updatedAt": "2026-11-18T11:45:00Z",
-    "viewsCount": 245000,
-    "llmCitationCount": 6810,
-    "isBreakout": true
+    "updatedAt": "2026-11-18T11:45:00Z"
   }
 ]

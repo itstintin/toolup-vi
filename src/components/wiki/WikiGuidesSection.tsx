@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Category, QuestionRecord } from "@/types";
+import { calculateReadTime } from "@/lib/utils";
+import { Clock, Layers } from "lucide-react";
 
 interface WikiGuidesSectionProps {
   questions: QuestionRecord[];
@@ -83,7 +85,7 @@ export function WikiGuidesSection({ questions }: WikiGuidesSectionProps) {
                 </div>
 
                 <span className="text-[10px] font-mono text-emerald-400">
-                  {question.lastPatchVerified}
+                  {question.verifiedPatch || question.lastPatchVerified || "Launch Build 1.0"}
                 </span>
               </div>
 
@@ -96,8 +98,14 @@ export function WikiGuidesSection({ questions }: WikiGuidesSectionProps) {
               </p>
 
               <div className="mt-3 pt-2.5 border-t border-[#181C26] flex items-center justify-between text-xs font-mono text-[#64748B]">
-                <span>{question.steps.length} Steps Verified</span>
-                <span className="text-[#FF2E93]">{question.velocityChange}</span>
+                <span className="flex items-center gap-1">
+                  <Layers className="w-3 h-3 text-[#00F0FF]" />
+                  <span>{question.steps.length} Steps</span>
+                </span>
+                <span className="text-[#00F0FF] flex items-center gap-1">
+                  <Clock className="w-3 h-3" />
+                  <span>{question.readTime || calculateReadTime(question.tldrAnswer)}</span>
+                </span>
               </div>
             </Link>
           ))}
