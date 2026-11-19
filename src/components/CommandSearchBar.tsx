@@ -157,7 +157,7 @@ export function CommandSearchBar({
 
           {filteredQuestions.length === 0 ? (
             <div className="p-6 text-center text-sm text-[#94A3B8]">
-              No verified records found for <span className="text-[#F3F4F6]">"{query}"</span>.
+              No verified records found for <span className="text-[#F3F4F6]">&ldquo;{query}&rdquo;</span>.
               <div className="text-xs text-[#64748B] mt-1 font-mono">
                 Leonida guide index updates continuously.
               </div>

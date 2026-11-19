@@ -62,7 +62,7 @@ export function WikiGuidesSection({ questions }: WikiGuidesSectionProps) {
 
       {filtered.length === 0 ? (
         <div className="p-8 text-center rounded-xl bg-[#12141D] border border-[#1F2430] text-sm text-[#94A3B8]">
-          No guides found for category <span className="text-[#F3F4F6]">"{selectedCategory}"</span>.
+          No guides found for category <span className="text-[#F3F4F6]">&ldquo;{selectedCategory}&rdquo;</span>.
         </div>
       ) : (
         <div className="space-y-3">

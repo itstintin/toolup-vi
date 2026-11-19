@@ -69,7 +69,7 @@ export function AiCitationBox({ question }: AiCitationBoxProps) {
 
       {/* Verbatim TL;DR Answer Content */}
       <blockquote className="text-base sm:text-lg font-medium text-[#F3F4F6] leading-relaxed mb-5 font-sans">
-        "{question.tldrAnswer}"
+        &ldquo;{question.tldrAnswer}&rdquo;
       </blockquote>
 
       {/* Verification & Metadata Footer */}

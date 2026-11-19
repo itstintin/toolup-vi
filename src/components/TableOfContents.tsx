@@ -4,20 +4,20 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { List, ChevronRight } from "lucide-react";
 
+const TOC_ITEMS = [
+  { id: "ai-citation-box", label: "01. TL;DR Instant Answer" },
+  { id: "step-by-step", label: "02. Step-by-Step Execution" },
+  { id: "specs-table", label: "03. Verified Specifications" },
+  { id: "citation-sources", label: "04. Source Citations" },
+];
+
 export function TableOfContents() {
   const [activeSection, setActiveSection] = useState("ai-citation-box");
-
-  const items = [
-    { id: "ai-citation-box", label: "01. TL;DR Instant Answer" },
-    { id: "step-by-step", label: "02. Step-by-Step Execution" },
-    { id: "specs-table", label: "03. Verified Specifications" },
-    { id: "citation-sources", label: "04. Source Citations" },
-  ];
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      for (const item of items) {
+      for (const item of TOC_ITEMS) {
         const el = document.getElementById(item.id);
         if (el) {
           const top = el.offsetTop - 120;
@@ -42,7 +42,7 @@ export function TableOfContents() {
       </div>
 
       <ul className="space-y-1.5">
-        {items.map((item) => {
+        {TOC_ITEMS.map((item) => {
           const isActive = activeSection === item.id;
           return (
             <li key={item.id}>
