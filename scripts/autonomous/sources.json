@@ -1,0 +1,50 @@
+{
+  "name": "ToolUp VI Ingestion Feeds",
+  "version": "1.0.0",
+  "rss_feeds": [
+    {
+      "name": "Rockstar Games News (Google News Verified)",
+      "url": "https://news.google.com/rss/search?q=site:rockstargames.com+OR+%22Rockstar+Games%22+GTA&hl=en-US&gl=US&ceid=US:en",
+      "type": "official",
+      "filter_keywords": ["VI", "GTA", "Grand Theft Auto", "Leonida", "Vice City"]
+    },
+    {
+      "name": "Google News GTA VI Guides",
+      "url": "https://news.google.com/rss/search?q=%22GTA+6%22+OR+%22GTA+VI%22+guide+OR+%22how+to%22+OR+patch+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "type": "aggregator",
+      "filter_keywords": ["GTA", "Grand Theft Auto", "Leonida", "Vice City"]
+    },
+    {
+      "name": "Eurogamer Guides",
+      "url": "https://www.eurogamer.net/feed",
+      "type": "outlet",
+      "filter_keywords": ["GTA 6", "GTA VI", "Grand Theft Auto 6", "Leonida", "Vice City"]
+    },
+    {
+      "name": "IGN Guides",
+      "url": "https://feeds.feedburner.com/ign/all",
+      "type": "outlet",
+      "filter_keywords": ["GTA 6", "GTA VI", "Grand Theft Auto 6", "Leonida", "Vice City"]
+    },
+    {
+      "name": "GamesRadar Guides",
+      "url": "https://www.gamesradar.com/rss/",
+      "type": "outlet",
+      "filter_keywords": ["GTA 6", "GTA VI", "Grand Theft Auto 6", "Leonida", "Vice City"]
+    },
+    {
+      "name": "PC Gamer Guides",
+      "url": "https://www.pcgamer.com/rss/",
+      "type": "outlet",
+      "filter_keywords": ["GTA 6", "GTA VI", "Grand Theft Auto 6", "Leonida", "Vice City"]
+    }
+  ],
+  "youtube_channels": [
+    {
+      "name": "GTA Series Videos",
+      "channel_id": "UCuWcjpKbIDAbZfHoru1toFg",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuWcjpKbIDAbZfHoru1toFg",
+      "filter_keywords": ["GTA 6", "GTA VI", "Guide", "Walkthrough", "Location", "Mission", "How to"]
+    }
+  ]
+}

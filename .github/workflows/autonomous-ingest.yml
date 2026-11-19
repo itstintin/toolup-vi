@@ -1,0 +1,47 @@
+name: ToolUp VI Autonomous Ingestion Pipeline
+
+on:
+  schedule:
+    # Runs automatically every 2 hours
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run in Dry-Run mode (Simulate evaluation without modifying database)"
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: autonomous-ingest-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run-autonomous-pipeline:
+    name: Scrape, Authenticate, Edit & Publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: "npm"
+
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Execute Autonomous Pipeline
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LIBSQL_DATABASE_URL: ${{ secrets.LIBSQL_DATABASE_URL || 'libsql://toolup-vi-itstintin.aws-ap-south-1.turso.io' }}
+          LIBSQL_AUTH_TOKEN: ${{ secrets.LIBSQL_AUTH_TOKEN }}
+          REVALIDATE_SECRET: ${{ secrets.REVALIDATE_SECRET }}
+          SITE_URL: ${{ secrets.SITE_URL || 'https://toolup-vi.wikiguide.workers.dev' }}
+          NEXT_PUBLIC_SITE_URL: ${{ secrets.SITE_URL || 'https://toolup-vi.wikiguide.workers.dev' }}
+        run: |
+          node scripts/autonomous/run-pipeline.mjs ${{ inputs.dry_run && '--dry-run' || '' }}
