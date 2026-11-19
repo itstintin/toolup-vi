@@ -27,6 +27,7 @@ import {
   AlertTriangle,
 } from "lucide-react";
 import { formatDate, calculateReadTime } from "@/lib/utils";
+import { getSiteUrl } from "@/lib/site";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const canonicalUrl = `https://toolup-vi.com/wiki/${question.slug}`;
+  const canonicalUrl = `${getSiteUrl()}/wiki/${question.slug}`;
 
   return {
     title: `${question.title} - GTA VI Wiki Guide | ToolUp VI`,

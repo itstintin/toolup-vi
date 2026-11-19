@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { searchQuestionsFromDb, searchQuestions } from "@/lib/db";
 import { calculateReadTime } from "@/lib/utils";
+import { getSiteUrl } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
@@ -29,7 +30,7 @@ export async function GET(req: NextRequest) {
         verifiedPatch: item.verifiedPatch || item.lastPatchVerified || "Launch Build 1.0",
         readTime: item.readTime || calculateReadTime(item.tldrAnswer),
         stepsCount: item.steps ? item.steps.length : 0,
-        url: `https://toolup-vi.com/q/${item.slug}`,
+        url: `${getSiteUrl()}/q/${item.slug}`,
       })),
     });
   } catch (err: unknown) {
@@ -57,7 +58,7 @@ export async function GET(req: NextRequest) {
           verifiedPatch: item.verifiedPatch || item.lastPatchVerified || "Launch Build 1.0",
           readTime: item.readTime || calculateReadTime(item.tldrAnswer),
           stepsCount: item.steps ? item.steps.length : 0,
-          url: `https://toolup-vi.com/q/${item.slug}`,
+          url: `${getSiteUrl()}/q/${item.slug}`,
         })),
       });
     } catch {

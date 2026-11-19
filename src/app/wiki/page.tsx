@@ -21,6 +21,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { SpecRow, QuestionRecord } from "@/types";
+import { getSiteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "GTA VI Editorial Gaming Wiki & Region Guide | ToolUp VI",
@@ -37,13 +38,13 @@ export const metadata: Metadata = {
     "Mount Kalaga National Park",
   ],
   alternates: {
-    canonical: "https://toolup-vi.com/wiki",
+    canonical: `${getSiteUrl()}/wiki`,
   },
   openGraph: {
     title: "GTA VI Editorial Gaming Wiki & Regional Intel | ToolUp VI",
     description:
       "Comprehensive 3-Column GTA VI gameplay telemetry, region walkthroughs, mission checklists, and loot tables across Leonida.",
-    url: "https://toolup-vi.com/wiki",
+    url: `${getSiteUrl()}/wiki`,
     type: "website",
   },
 };

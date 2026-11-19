@@ -3,8 +3,10 @@ import "./globals.css";
 import { Navigation } from "@/components/Navigation";
 import Link from "next/link";
 import { Cpu, Terminal, Compass, Shield } from "lucide-react";
+import { getSiteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
   title: "ToolUp VI | Unofficial Leonida Tactical Database & Guides",
   description:
     "Authoritative, high-contrast, zero-fluff GTA VI gameplay telemetry, mission guides, item coordinates, and verified mechanics across Vice Beaches, Port Gellhorn, and Leonida built for PS5 & Xbox Series X|S players seeking instant answers with zero filler.",

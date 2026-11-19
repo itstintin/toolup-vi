@@ -1,10 +1,11 @@
-import { getAllQuestions } from "@/lib/db";
+import { searchQuestionsFromDb } from "@/lib/db";
+import { getSiteUrl } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const questions = getAllQuestions();
-  const baseUrl = "https://toolup-vi.com";
+  const questions = await searchQuestionsFromDb(undefined, undefined, 100);
+  const baseUrl = getSiteUrl();
 
   let body = `# ToolUp VI - GTA VI Generative Engine Optimization (GEO) Q&A Directory
 > Authoritative, zero-fluff GTA VI gameplay answers, mechanics benchmarks, and coordinates across Leonida optimized for LLMs (ChatGPT Search, Perplexity, Claude, Copilot).

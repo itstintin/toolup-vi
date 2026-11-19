@@ -1,6 +1,7 @@
 import { QuestionRecord } from "@/types";
+import { getSiteUrl } from "@/lib/site";
 
-export function generateQaPageSchema(question: QuestionRecord, baseUrl: string = "https://toolup-vi.com") {
+export function generateQaPageSchema(question: QuestionRecord, baseUrl: string = getSiteUrl()) {
   return {
     "@context": "https://schema.org",
     "@type": "QAPage",
@@ -56,7 +57,7 @@ export function generateFaqPageSchema(question: QuestionRecord) {
   };
 }
 
-export function generateArticleSchema(question: QuestionRecord, baseUrl: string = "https://toolup-vi.com") {
+export function generateArticleSchema(question: QuestionRecord, baseUrl: string = getSiteUrl()) {
   return {
     "@context": "https://schema.org",
     "@type": "TechArticle",

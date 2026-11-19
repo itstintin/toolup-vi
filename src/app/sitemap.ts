@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
 import { searchQuestionsFromDb } from "@/lib/db";
+import { getSiteUrl } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const questions = await searchQuestionsFromDb(undefined, undefined, 100);
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://toolup-vi.com";
+  const baseUrl = getSiteUrl();
   const now = new Date();
 
   const staticRoutes: MetadataRoute.Sitemap = [

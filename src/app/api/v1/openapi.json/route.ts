@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
+import { getSiteUrl } from "@/lib/site";
 
 export async function GET() {
+  const baseUrl = getSiteUrl();
   const spec = {
     openapi: "3.1.0",
     info: {
@@ -10,12 +12,12 @@ export async function GET() {
       version: "1.0.0",
       contact: {
         name: "ToolUp VI Systems",
-        url: "https://toolup-vi.com",
+        url: baseUrl,
       },
     },
     servers: [
       {
-        url: "https://toolup-vi.com",
+        url: baseUrl,
         description: "Production Server",
       },
       {

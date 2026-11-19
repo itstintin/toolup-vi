@@ -1,11 +1,12 @@
-import { getAllQuestions } from "@/lib/db";
+import { searchQuestionsFromDb } from "@/lib/db";
 import { calculateReadTime } from "@/lib/utils";
+import { getSiteUrl } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  const questions = getAllQuestions();
-  const baseUrl = "https://toolup-vi.com";
+  const questions = await searchQuestionsFromDb(undefined, undefined, 100);
+  const baseUrl = getSiteUrl();
 
   let body = `# ToolUp VI - GTA VI Full Corpus Knowledge Dump
 # Generated for Generative Engine Optimization (GEO) & Direct Citation
